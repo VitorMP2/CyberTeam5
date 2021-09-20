@@ -8,6 +8,6 @@ namespace UCP.App.Dominio
 		public string apellido{get;set;}
 		public int identificacion{get;set;}
 		public int edad{get;set;}
-		public string estado{get;set;}
+		public EstadoCOVID estadoCovid{get;set;}
 	}
 }
