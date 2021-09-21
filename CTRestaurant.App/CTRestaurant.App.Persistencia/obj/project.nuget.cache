@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "NxW0zxRuIe0wGiogjJDJ+sg9u73SgSB1ZOVtaY4V++h37Te7zLk1j2u74YVBqwjVq4d2zXMBn3pE8bDE37H3uw==",
+  "success": true,
+  "projectFilePath": "C:\\CyberTeam5\\CTRestaurant.App\\CTRestaurant.App.Persistencia\\CTRestaurant.App.Persistencia.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Familia\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\Familia\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

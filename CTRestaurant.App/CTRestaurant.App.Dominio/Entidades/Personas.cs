@@ -1,10 +1,11 @@
 using System;
-namespace UCP.App.Dominio
+
+namespace CTRestaurant.App.Dominio
 {
 	public class Personas
 	{
 		public int id;
-		public string nombre{get;set;};
+		public string nombre{get;set;}
 		public string apellido{get;set;}
 		public int identificacion{get;set;}
 		public int edad{get;set;}
