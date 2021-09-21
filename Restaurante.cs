@@ -1,6 +1,6 @@
 using System;
 
-namespace UCR.App:Dominio
+namespace UCR.App.Dominio
 {
     public class Restaurante
     {
@@ -8,5 +8,6 @@ namespace UCR.App:Dominio
         public int Aforo{get;set;}
         public int CantidadMesas{get;set;}
         public int PuestosPorMesa{get;set;}
+
     }
 }
