@@ -1,5 +1,4 @@
 using System;
-
 namespace CTRestaurant.App.Dominio
 {
     public class Administrativo : Persona
