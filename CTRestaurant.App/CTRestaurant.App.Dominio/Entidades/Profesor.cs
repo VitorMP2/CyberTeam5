@@ -4,7 +4,7 @@ namespace CTRestaurant.App.Dominio
 {
     public class Profesor : Persona
     {
-        public string cubiculo{get;set;}
-        public string facultad{get;set;}
+        public string Cubiculo{get;set;}
+        public string Facultad{get;set;}
     }
 }
