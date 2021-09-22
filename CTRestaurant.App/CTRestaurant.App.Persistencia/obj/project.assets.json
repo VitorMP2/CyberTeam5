@@ -2068,6 +2068,16 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
+      },
+      "CTRestaurant.App.Dominio/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/CTRestaurant.App.Dominio.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CTRestaurant.App.Dominio.dll": {}
+        }
       }
     }
   },
@@ -7236,10 +7246,16 @@
         "system.xml.xmlserializer.4.3.0.nupkg.sha512",
         "system.xml.xmlserializer.nuspec"
       ]
+    },
+    "CTRestaurant.App.Dominio/1.0.0": {
+      "type": "project",
+      "path": "../CTRestaurant.App.Dominio/CTRestaurant.App.Dominio.csproj",
+      "msbuildProject": "../CTRestaurant.App.Dominio/CTRestaurant.App.Dominio.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.1": [
+      "CTRestaurant.App.Dominio >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 5.0.0",
       "Microsoft.EntityFrameworkCore.Design >= 5.0.0",
       "Microsoft.EntityFrameworkCore.SqlServer >= 5.0.0",
@@ -7269,7 +7285,11 @@
       },
       "frameworks": {
         "netstandard2.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\CyberTeam5\\CTRestaurant.App\\CTRestaurant.App.Dominio\\CTRestaurant.App.Dominio.csproj": {
+              "projectPath": "C:\\CyberTeam5\\CTRestaurant.App\\CTRestaurant.App.Dominio\\CTRestaurant.App.Dominio.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

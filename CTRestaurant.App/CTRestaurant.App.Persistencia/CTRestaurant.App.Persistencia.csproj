@@ -17,4 +17,8 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\CTRestaurant.App.Dominio\CTRestaurant.App.Dominio.csproj" />
+  </ItemGroup>
+
 </Project>

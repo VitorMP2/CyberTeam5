@@ -2,7 +2,7 @@ using System;
 
 namespace CTRestaurant.App.Dominio
 {
-	public class Personas
+	public class Persona
 	{
 		public int id;
 		public string nombre{get;set;}
