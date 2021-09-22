@@ -1,5 +1,5 @@
 using System;
-namespace UCR.App.Dominio
+namespace CTRestaurant.App.Dominio
 {
     public class Administrativo : Personas
     {
