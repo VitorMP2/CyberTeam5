@@ -7,3 +7,12 @@ C:\CyberTeam5\CTRestaurant.App\CTRestaurant.App.Dominio\bin\Debug\netstandard2.0
 C:\CyberTeam5\CTRestaurant.App\CTRestaurant.App.Dominio\bin\Debug\netstandard2.0\CTRestaurant.App.Dominio.pdb
 C:\CyberTeam5\CTRestaurant.App\CTRestaurant.App.Dominio\obj\Debug\netstandard2.0\CTRestaurant.App.Dominio.dll
 C:\CyberTeam5\CTRestaurant.App\CTRestaurant.App.Dominio\obj\Debug\netstandard2.0\CTRestaurant.App.Dominio.pdb
+C:\Users\blanca\Desktop\Restaurante UC\CyberTeam5\CTRestaurant.App\CTRestaurant.App.Dominio\bin\Debug\netstandard2.0\CTRestaurant.App.Dominio.deps.json
+C:\Users\blanca\Desktop\Restaurante UC\CyberTeam5\CTRestaurant.App\CTRestaurant.App.Dominio\bin\Debug\netstandard2.0\CTRestaurant.App.Dominio.dll
+C:\Users\blanca\Desktop\Restaurante UC\CyberTeam5\CTRestaurant.App\CTRestaurant.App.Dominio\bin\Debug\netstandard2.0\CTRestaurant.App.Dominio.pdb
+C:\Users\blanca\Desktop\Restaurante UC\CyberTeam5\CTRestaurant.App\CTRestaurant.App.Dominio\obj\Debug\netstandard2.0\CTRestaurant.App.Dominio.csprojAssemblyReference.cache
+C:\Users\blanca\Desktop\Restaurante UC\CyberTeam5\CTRestaurant.App\CTRestaurant.App.Dominio\obj\Debug\netstandard2.0\CTRestaurant.App.Dominio.AssemblyInfoInputs.cache
+C:\Users\blanca\Desktop\Restaurante UC\CyberTeam5\CTRestaurant.App\CTRestaurant.App.Dominio\obj\Debug\netstandard2.0\CTRestaurant.App.Dominio.AssemblyInfo.cs
+C:\Users\blanca\Desktop\Restaurante UC\CyberTeam5\CTRestaurant.App\CTRestaurant.App.Dominio\obj\Debug\netstandard2.0\CTRestaurant.App.Dominio.csproj.CoreCompileInputs.cache
+C:\Users\blanca\Desktop\Restaurante UC\CyberTeam5\CTRestaurant.App\CTRestaurant.App.Dominio\obj\Debug\netstandard2.0\CTRestaurant.App.Dominio.dll
+C:\Users\blanca\Desktop\Restaurante UC\CyberTeam5\CTRestaurant.App\CTRestaurant.App.Dominio\obj\Debug\netstandard2.0\CTRestaurant.App.Dominio.pdb

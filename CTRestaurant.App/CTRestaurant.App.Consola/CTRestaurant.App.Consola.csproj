@@ -12,4 +12,8 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\CTrestaurant.App.Persistencia\CTRestaurant.App.Persistencia.csproj" />
+  </ItemGroup>
+
 </Project>

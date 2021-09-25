@@ -9,7 +9,6 @@ namespace CTRestaurant.App.Persistencia
         public DbSet<Estudiante> Estudiantes{get;set;}
         public DbSet<Administrativo> Administrativos {get;set;}
         public DbSet<Contagiado> Contagiados {get;set;}
-        public DbSet<EstadoCOVID> EstadoCOVID {get;set;}
         public DbSet<PersonalAseo> PersonalAseo {get;set;}
         public DbSet<PersonalCocina> PersonalCocina {get;set;}
         public DbSet<Profesor> Profesores {get;set;}
@@ -20,7 +19,7 @@ namespace CTRestaurant.App.Persistencia
         protected override void OnConfiguring(DbContextOptionsBuilder optionsbuilder)
         {
            if (!optionsbuilder.IsConfigured)
-           optionsbuilder.UseSqlServer("Data Sourse =(localdb)\\MSSQLLocalDB; Initial Catalog = CTRestaurant")
+           optionsbuilder.UseSqlServer("Data Source =(localdb)\\MSSQLLocalDB; Initial Catalog = CTRestaurant");
         }
     }
 }
