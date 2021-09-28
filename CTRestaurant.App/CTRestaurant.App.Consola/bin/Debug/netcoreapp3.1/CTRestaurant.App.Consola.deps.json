@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v3.1": {
       "CTRestaurant.App.Consola/1.0.0": {
         "dependencies": {
+          "CTRestaurant.App.Dominio": "1.0.0",
           "CTRestaurant.App.Persistencia": "1.0.0",
           "Microsoft.EntityFrameworkCore.Design": "5.0.0"
         },

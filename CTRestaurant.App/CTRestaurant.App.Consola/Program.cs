@@ -1,4 +1,6 @@
 ﻿using System;
+using CTRestaurant.App.Dominio;
+using CTRestaurant.App.Persistencia;
 
 namespace CTRestaurant.App.Consola
 {
