@@ -18,8 +18,8 @@ namespace CTRestaurant.App.Persistencia
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsbuilder)
         {
-           if (!optionsbuilder.IsConfigured)
-           optionsbuilder.UseSqlServer("Data Source =(localdb)\\MSSQLLocalDB; Initial Catalog = CTRestaurant");
+        if (!optionsbuilder.IsConfigured)
+        optionsbuilder.UseSqlServer("Data Source =(localdb)\\MSSQLLocalDB; Initial Catalog = CTRestaurant");
         }
     }
 }

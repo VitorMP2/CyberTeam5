@@ -1,0 +1,25 @@
+﻿@page
+@model CTRestaurant.App.Frontend.Pages.RegistrosRestauranteModel
+@{
+    ViewData["Title"] = "Registros";
+}
+<h1>Registros del Restaurante</h1>
+<table class="table" style="text-align:center;">
+    <tr>
+        <td><h4>ID</h4></td>
+        <td><h4>Fecha</h4></td>
+        <td><h4>Aforo</h4></td>
+        <td><h4>Cantidad Mesas</h4></td>
+        <td><h4>Puestos Por Mesa</h4></td>
+    </tr>
+    @foreach (var registro in Model.RegistrosRestaurante)
+    {
+        <tr>
+            <td>@registro.Id</td>
+            <td>@registro.FechaRegistro</td>
+            <td>@registro.Aforo</td>
+            <td>@registro.CantidadMesas</td>
+            <td>@registro.PuestosPorMesa</td>
+        </tr>
+    }
+</table>

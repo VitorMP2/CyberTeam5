@@ -1,7 +1,7 @@
 {
   "format": 1,
   "restore": {
-    "C:\\CyberTeam5\\CTRestaurant.App\\CTrestaurant.App.Persistencia\\CTRestaurant.App.Persistencia.csproj": {}
+    "C:\\CyberTeam5\\CTRestaurant.App\\CTRestaurant.App.Persistencia\\CTRestaurant.App.Persistencia.csproj": {}
   },
   "projects": {
     "C:\\CyberTeam5\\CTRestaurant.App\\CTRestaurant.App.Dominio\\CTRestaurant.App.Dominio.csproj": {
@@ -57,14 +57,14 @@
         }
       }
     },
-    "C:\\CyberTeam5\\CTRestaurant.App\\CTrestaurant.App.Persistencia\\CTRestaurant.App.Persistencia.csproj": {
+    "C:\\CyberTeam5\\CTRestaurant.App\\CTRestaurant.App.Persistencia\\CTRestaurant.App.Persistencia.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\CyberTeam5\\CTRestaurant.App\\CTrestaurant.App.Persistencia\\CTRestaurant.App.Persistencia.csproj",
+        "projectUniqueName": "C:\\CyberTeam5\\CTRestaurant.App\\CTRestaurant.App.Persistencia\\CTRestaurant.App.Persistencia.csproj",
         "projectName": "CTRestaurant.App.Persistencia",
-        "projectPath": "C:\\CyberTeam5\\CTRestaurant.App\\CTrestaurant.App.Persistencia\\CTRestaurant.App.Persistencia.csproj",
+        "projectPath": "C:\\CyberTeam5\\CTRestaurant.App\\CTRestaurant.App.Persistencia\\CTRestaurant.App.Persistencia.csproj",
         "packagesPath": "C:\\Users\\Familia\\.nuget\\packages\\",
-        "outputPath": "C:\\CyberTeam5\\CTRestaurant.App\\CTrestaurant.App.Persistencia\\obj\\",
+        "outputPath": "C:\\CyberTeam5\\CTRestaurant.App\\CTRestaurant.App.Persistencia\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Familia\\AppData\\Roaming\\NuGet\\NuGet.Config"
