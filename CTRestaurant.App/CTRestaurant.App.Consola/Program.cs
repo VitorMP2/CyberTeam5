@@ -83,7 +83,7 @@ namespace CTRestaurant.App.Consola
 
              }else
              {
-                 Console.WriteLine("No se encontro el profesor que se iba actalizar");
+                 Console.WriteLine("No se encontro el profesor ");
              }
         }
         //EliminarProfesor
