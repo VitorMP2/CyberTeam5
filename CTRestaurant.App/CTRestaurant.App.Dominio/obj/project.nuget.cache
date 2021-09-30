@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "5tiELPUY1PrOpltoha85+CD7NmsVwGedqWeLKlHtYPskI2LrUsjG7SjlMgevIns0dQsfhhxSg0yJikW6OVBfDg==",
+  "dgSpecHash": "Cdz2dZUC4swDfr1JS3kr21kPM0G0BRWZMO1rk71szya4y+ZMO5mislIl8wI9hJAG96+U8qepvyRFHd+a0IeqTg==",
   "success": true,
-  "projectFilePath": "C:\\CyberTeam5\\CTRestaurant.App\\CTRestaurant.App.Dominio\\CTRestaurant.App.Dominio.csproj",
+  "projectFilePath": "C:\\Users\\blanca\\Desktop\\Restaurante UC\\CyberTeam5\\CTRestaurant.App\\CTRestaurant.App.Dominio\\CTRestaurant.App.Dominio.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Familia\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Users\\Familia\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+    "C:\\Users\\blanca\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\blanca\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
   ],
   "logs": []
 }
