@@ -1,6 +1,7 @@
 ﻿using System;
 using CTRestaurant.App.Dominio;
 using CTRestaurant.App.Persistencia;
+using System.Collections.Generic;
 
 namespace CTRestaurant.App.Consola
 {
@@ -12,7 +13,8 @@ namespace CTRestaurant.App.Consola
             Console.WriteLine("Hello World!");
             //CrearProfesor();
             //ConsultarProfesor(1000000);
-            EliminarProfesor(1);
+           // EliminarProfesor(100000);
+           ConsultarProfesores();
             
          /*   Profesor profesor_1= new Profesor
             {
@@ -97,5 +99,13 @@ namespace CTRestaurant.App.Consola
            }
         }
         //ConsultarProfesores
+        private static void ConsultarProfesores()
+        {
+            IEnumerable<Profesor>profesores=_repoProfesor.GetAllProfesores(); 
+            foreach (var profesor in profesores)
+            {
+                Console.WriteLine(profesor.nombre+" "+profesor.apellido+" "+profesor.Facultad);
+            }
+        }
     }
 }
