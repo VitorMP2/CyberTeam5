@@ -12,7 +12,7 @@ namespace CTRestaurant.App.Consola
             Console.WriteLine("Hello World!");
             //CrearProfesor();
             //ConsultarProfesor(1000000);
-            EditarProfesor(1);
+            EliminarProfesor(1);
             
          /*   Profesor profesor_1= new Profesor
             {
@@ -87,7 +87,7 @@ namespace CTRestaurant.App.Consola
              }
         }
         //EliminarProfesor
-        privare static void EliminarProfesor(int identificacion)
+        private static void EliminarProfesor(int identificacion)
         {
            if( _repoProfesor.DeleteProfesor(identificacion))
            Console.WriteLine("Profesor Eliminado");

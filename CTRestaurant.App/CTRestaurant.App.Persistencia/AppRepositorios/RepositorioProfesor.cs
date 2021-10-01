@@ -44,7 +44,7 @@ namespace CTRestaurant.App.Persistencia
       bool IRepositorioProfesor.DeleteProfesor(int identificacion)
       {
           var profesorEncontrado = _appContext.Profesores.FirstOrDefault(p=> p.identificacion==identificacion);
-          if(profesorEncontrado!=null)
+          if(profesorEncontrado==null)
           return false;
           _appContext.Profesores.Remove(profesorEncontrado);
           _appContext.SaveChanges();
