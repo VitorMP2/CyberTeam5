@@ -1,6 +1,7 @@
 ﻿@page
 @model CTRestaurant.App.Frontend.Pages.DetallesModel
 @{
+<<<<<<< HEAD
 }
 <h1>Detalles del profesor</h1>
 <table class="table">
@@ -13,3 +14,25 @@
     </tr>
 </table>
 <a class="btn btn-primary text-dark" asp-area="" asp-page="/Listas/Profesores">Profesores</a>
+=======
+    ViewData["Title"] = "Detalles";
+}
+<h1>Detalles del registro @Model.registroRestaurante.Id</h1>
+<table class="table" style="text-align:center;">
+    <tr>
+        
+        <th>Fecha</th>
+        <th>Aforo</th>
+        <th>Cantidad Mesas</th>
+        <th>Puestos Por Mesa</th>        
+    </tr>
+    <tr>
+        <td>@Model.registroRestaurante.FechaRegistro.ToShortDateString()</td>
+        <td>@Model.registroRestaurante.Aforo</td>
+        <td>@Model.registroRestaurante.CantidadMesas</td>
+        <td>@Model.registroRestaurante.PuestosPorMesa</td>
+    </tr>
+
+</table>
+<input class="btn btn-primary" type="button" onclick="history.back()" name="volver atrás" value="Volver Atrás">
+>>>>>>> 93413183007c681deb60033ac475aed98e2d5830

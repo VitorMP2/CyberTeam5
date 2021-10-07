@@ -36,9 +36,15 @@ namespace CTRestaurant.App.Consola
         {
              var profesor = new Profesor
              {
+<<<<<<< HEAD
                   nombre ="Diego",
                 apellido="Restrepo",
                 identificacion=1,
+=======
+                nombre ="Felipe",
+                apellido="Mesa",
+                identificacion=100000,
+>>>>>>> 93413183007c681deb60033ac475aed98e2d5830
                 edad=30,
                 estadoCovid=EstadoCOVID.Positivo,
                 Cubiculo="03",

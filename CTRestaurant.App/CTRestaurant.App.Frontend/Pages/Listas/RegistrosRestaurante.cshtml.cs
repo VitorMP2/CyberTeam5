@@ -19,6 +19,7 @@ namespace CTRestaurant.App.Frontend.Pages
         public void OnGet()
         {
             RegistrosRestaurante=_repoRestaurante.GetAllRestaurante();
+            
         }
     }
 }

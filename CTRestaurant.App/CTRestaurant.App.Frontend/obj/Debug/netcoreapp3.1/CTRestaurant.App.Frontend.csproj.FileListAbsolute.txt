@@ -80,6 +80,7 @@ C:\CyberTeam5\CTRestaurant.App\CTRestaurant.App.Frontend\bin\Debug\netcoreapp3.1
 C:\CyberTeam5\CTRestaurant.App\CTRestaurant.App.Frontend\bin\Debug\netcoreapp3.1\CTRestaurant.App.Persistencia.dll
 C:\CyberTeam5\CTRestaurant.App\CTRestaurant.App.Frontend\bin\Debug\netcoreapp3.1\CTRestaurant.App.Dominio.pdb
 C:\CyberTeam5\CTRestaurant.App\CTRestaurant.App.Frontend\bin\Debug\netcoreapp3.1\CTRestaurant.App.Persistencia.pdb
+<<<<<<< HEAD
 C:\Users\blanca\Desktop\Restaurante UC\CyberTeam5\CTRestaurant.App\CTRestaurant.App.Frontend\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Users\blanca\Desktop\Restaurante UC\CyberTeam5\CTRestaurant.App\CTRestaurant.App.Frontend\bin\Debug\netcoreapp3.1\appsettings.json
 C:\Users\blanca\Desktop\Restaurante UC\CyberTeam5\CTRestaurant.App\CTRestaurant.App.Frontend\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
@@ -166,3 +167,8 @@ C:\Users\blanca\Desktop\Restaurante UC\CyberTeam5\CTRestaurant.App\CTRestaurant.
 C:\Users\blanca\Desktop\Restaurante UC\CyberTeam5\CTRestaurant.App\CTRestaurant.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Listas\Detalles.cshtml.g.cs
 C:\Users\blanca\Desktop\Restaurante UC\CyberTeam5\CTRestaurant.App\CTRestaurant.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Listas\Editar.cshtml.g.cs
 C:\Users\blanca\Desktop\Restaurante UC\CyberTeam5\CTRestaurant.App\CTRestaurant.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Listas\Eliminar.cshtml.g.cs
+=======
+C:\CyberTeam5\CTRestaurant.App\CTRestaurant.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Listas\Detalles.cshtml.g.cs
+C:\CyberTeam5\CTRestaurant.App\CTRestaurant.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Listas\Editar.cshtml.g.cs
+C:\CyberTeam5\CTRestaurant.App\CTRestaurant.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Listas\Eliminar.cshtml.g.cs
+>>>>>>> 93413183007c681deb60033ac475aed98e2d5830
