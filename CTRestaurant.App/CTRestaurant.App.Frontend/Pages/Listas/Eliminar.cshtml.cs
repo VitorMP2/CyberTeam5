@@ -1,4 +1,3 @@
-using System.Collections;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,19 +6,22 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using CTRestaurant.App.Dominio;
 using CTRestaurant.App.Persistencia;
-
 namespace CTRestaurant.App.Frontend.Pages
 {
-    public class RegistrosRestauranteModel : PageModel
+    public class EliminarModel : PageModel
     {
         private static IRepositorioRestaurante _repoRestaurante = new RepositorioRestaurante(new Persistencia.AppContext());
-        //public Restaurante RegistrosRestaurante{get;set;}
-        public IEnumerable<Restaurante> RegistrosRestaurante {get;set;}
-
-        public void OnGet()
+        [BindProperty]
+        public Restaurante registro{get;set;}
+        public IActionResult OnGet(int IdRegistro)
         {
-            RegistrosRestaurante=_repoRestaurante.GetAllRestaurante();
-            
+            registro=_repoRestaurante.GetRegistro(IdRegistro);
+            return Page();
+        }
+        public IActionResult OnPost()
+        {
+            _repoRestaurante.DeleteRegistro(registro.Id);
+            return RedirectToPage("./RegistrosRestaurante");
         }
     }
 }

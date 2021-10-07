@@ -3,23 +3,44 @@
 @{
     ViewData["Title"] = "Registros";
 }
-<h1>Registros del Restaurante</h1>
+<h1>Registros del Restaurante</h1><a class="btn btn-success" asp-page="./Editar">Adicionar Registro</a>
 <table class="table" style="text-align:center;">
     <tr>
-        <td><h4>ID</h4></td>
-        <td><h4>Fecha</h4></td>
-        <td><h4>Aforo</h4></td>
-        <td><h4>Cantidad Mesas</h4></td>
-        <td><h4>Puestos Por Mesa</h4></td>
+        <th>ID</th>
+        <th>Fecha</th>
+        @*<th>Aforo</th>
+        <th>Cantidad Mesas</th>
+        <th>Puestos Por Mesa</th>*@
+        <th>Detalles</th>
+        <th>Editar</th>
+        <th>Borrar</th>
     </tr>
     @foreach (var registro in Model.RegistrosRestaurante)
     {
         <tr>
             <td>@registro.Id</td>
-            <td>@registro.FechaRegistro</td>
-            <td>@registro.Aforo</td>
+            <td>@registro.FechaRegistro.ToShortDateString()</td>
+            @*<td>@registro.Aforo</td>
             <td>@registro.CantidadMesas</td>
-            <td>@registro.PuestosPorMesa</td>
+            <td>@registro.PuestosPorMesa</td>*@
+            <td>
+                <a class="btn btn-primary table-btn" asp-page="./Detalles" asp-route-IdRegistro="@registro.Id">
+                    <i class="fas fa-info-circle fa-lg" aria-hidden="true"></i>
+                    
+                </a>
+            </td>
+            <td>
+                <a class="btn btn-secondary table-btn" asp-page="./Editar" asp-route-IdRegistro="@registro.Id">
+                    <i class="fas fa-address-book fa-lg" aria-hidden="true"></i>
+                    
+                </a> 
+            </td>
+            <td>        
+                <a class="btn btn-danger table-btn" asp-page="./Eliminar" asp-route-IdRegistro="@registro.Id">
+                    <i class="fas fa-trash-alt"></i>
+                    
+                </a>
+            </td>
         </tr>
     }
 </table>

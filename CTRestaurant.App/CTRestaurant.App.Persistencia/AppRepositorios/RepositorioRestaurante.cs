@@ -29,6 +29,7 @@ namespace CTRestaurant.App.Persistencia
             var RegistroEncontrado=_appContext.Restaurante.FirstOrDefault(r => r.Id==Registro.Id);
             if(RegistroEncontrado!=null)
             {
+                RegistroEncontrado.FechaRegistro=Registro.FechaRegistro;
                 RegistroEncontrado.Aforo=Registro.Aforo;
                 RegistroEncontrado.CantidadMesas=Registro.CantidadMesas;
                 RegistroEncontrado.PuestosPorMesa=Registro.PuestosPorMesa;
@@ -48,7 +49,7 @@ namespace CTRestaurant.App.Persistencia
         }
 
         Restaurante IRepositorioRestaurante.GetRegistro (int IdRegistro)
-        {
+        {            
             return _appContext.Restaurante.FirstOrDefault(r => r.Id==IdRegistro);
         }
     }

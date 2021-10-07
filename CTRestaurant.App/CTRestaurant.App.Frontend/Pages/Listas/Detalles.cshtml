@@ -1,0 +1,23 @@
+﻿@page
+@model CTRestaurant.App.Frontend.Pages.DetallesModel
+@{
+    ViewData["Title"] = "Detalles";
+}
+<h1>Detalles del registro @Model.registroRestaurante.Id</h1>
+<table class="table" style="text-align:center;">
+    <tr>
+        
+        <th>Fecha</th>
+        <th>Aforo</th>
+        <th>Cantidad Mesas</th>
+        <th>Puestos Por Mesa</th>        
+    </tr>
+    <tr>
+        <td>@Model.registroRestaurante.FechaRegistro.ToShortDateString()</td>
+        <td>@Model.registroRestaurante.Aforo</td>
+        <td>@Model.registroRestaurante.CantidadMesas</td>
+        <td>@Model.registroRestaurante.PuestosPorMesa</td>
+    </tr>
+
+</table>
+<input class="btn btn-primary" type="button" onclick="history.back()" name="volver atrás" value="Volver Atrás">

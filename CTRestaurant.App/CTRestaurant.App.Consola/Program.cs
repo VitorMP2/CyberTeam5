@@ -36,7 +36,7 @@ namespace CTRestaurant.App.Consola
         {
              var profesor = new Profesor
              {
-                  nombre ="Felipe",
+                nombre ="Felipe",
                 apellido="Mesa",
                 identificacion=100000,
                 edad=30,

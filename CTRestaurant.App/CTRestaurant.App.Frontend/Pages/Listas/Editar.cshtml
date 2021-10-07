@@ -1,0 +1,39 @@
+﻿@page
+@model CTRestaurant.App.Frontend.Pages.EditarModel
+@{
+    if (@Model.registro.Id!=0)
+    {
+        ViewData["Title"] = "Editar";
+    }else
+    {
+        ViewData["Title"] = "Agregar";
+    }
+    
+}
+@if(@Model.registro.Id!=0)
+{
+    <h1>Editar registro @Model.registro.Id</h1>    
+}else{
+    <h1>Agregar registro</h1>
+}
+<form method="post">
+    <input type="hidden" asp-for="registro.Id">
+    <div class="form-group">
+        <label asp-for="@Model.registro.FechaRegistro"></label>
+        <input asp-for="@Model.registro.FechaRegistro" class="form-control">
+    </div>
+    <div class="form-group">
+        <label asp-for="@Model.registro.Aforo"></label>
+        <input asp-for="@Model.registro.Aforo" class="form-control">
+    </div>
+    <div class="form-group">
+        <label asp-for="@Model.registro.CantidadMesas"></label>
+        <input asp-for="@Model.registro.CantidadMesas" class="form-control">
+    </div>
+    <div class="form-group">
+        <label asp-for="@Model.registro.PuestosPorMesa"></label>
+        <input asp-for="@Model.registro.PuestosPorMesa" class="form-control">
+    </div>    
+    <input class="btn btn-primary" type="button" onclick="history.back()" name="volver atrás" value="Volver Atrás">
+    <button type="submit" class="btn btn-success">Guardar Cambios</button>
+</form>

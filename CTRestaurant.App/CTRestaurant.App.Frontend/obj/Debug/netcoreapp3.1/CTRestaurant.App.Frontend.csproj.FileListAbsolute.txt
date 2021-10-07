@@ -80,3 +80,6 @@ C:\CyberTeam5\CTRestaurant.App\CTRestaurant.App.Frontend\bin\Debug\netcoreapp3.1
 C:\CyberTeam5\CTRestaurant.App\CTRestaurant.App.Frontend\bin\Debug\netcoreapp3.1\CTRestaurant.App.Persistencia.dll
 C:\CyberTeam5\CTRestaurant.App\CTRestaurant.App.Frontend\bin\Debug\netcoreapp3.1\CTRestaurant.App.Dominio.pdb
 C:\CyberTeam5\CTRestaurant.App\CTRestaurant.App.Frontend\bin\Debug\netcoreapp3.1\CTRestaurant.App.Persistencia.pdb
+C:\CyberTeam5\CTRestaurant.App\CTRestaurant.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Listas\Detalles.cshtml.g.cs
+C:\CyberTeam5\CTRestaurant.App\CTRestaurant.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Listas\Editar.cshtml.g.cs
+C:\CyberTeam5\CTRestaurant.App\CTRestaurant.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Listas\Eliminar.cshtml.g.cs
