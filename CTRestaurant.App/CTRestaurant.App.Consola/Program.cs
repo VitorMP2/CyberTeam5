@@ -1,4 +1,4 @@
-﻿using System;
+﻿/*using System;
 using CTRestaurant.App.Dominio;
 using CTRestaurant.App.Persistencia;
 using System.Collections.Generic;
@@ -11,10 +11,10 @@ namespace CTRestaurant.App.Consola
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-            //CrearProfesor();
+            CrearProfesor();
             //ConsultarProfesor(1000000);
-           // EliminarProfesor(100000);
-           ConsultarProfesores();
+            //EliminarProfesor(100000);
+          // ConsultarProfesores();
             
          /*   Profesor profesor_1= new Profesor
             {
@@ -28,17 +28,17 @@ namespace CTRestaurant.App.Consola
 
              };
              Console.WriteLine(profesor_1.nombre+" "+profesor_1.apellido+"\n"+profesor_1.identificacion+"\n"+profesor_1.edad+"\n"+profesor_1.estadoCovid+"\n"+profesor_1.Cubiculo+"\n"+profesor_1.Facultad);
-*/
-        }
+
+ */     //  }
         //CRUD
         //CrearProfesor
-        private static void CrearProfesor()
+      /*  private static void CrearProfesor()
         {
              var profesor = new Profesor
              {
-                  nombre ="Felipe",
-                apellido="Mesa",
-                identificacion=100000,
+                  nombre ="Diego",
+                apellido="Restrepo",
+                identificacion=1,
                 edad=30,
                 estadoCovid=EstadoCOVID.Positivo,
                 Cubiculo="03",
@@ -52,8 +52,8 @@ namespace CTRestaurant.App.Consola
             {
                  Console.WriteLine("Hubo un error de conexion con la base de datos");     
             }
-        }
-        //ConsultarProfesor
+        }*/
+        /*ConsultarProfesor
         private static void ConsultarProfesor(int identificacion)
         {
            Profesor profesorEncontrado= _repoProfesor.GetProfesor(identificacion); 
@@ -64,8 +64,8 @@ namespace CTRestaurant.App.Consola
            {
                Console.WriteLine("Profesor no encontrado");
            }
-        }
-        //EditarProfesor
+        }*/
+        /*EditarProfesor
         private static void EditarProfesor()
         {
             var profesor = new Profesor
@@ -87,9 +87,9 @@ namespace CTRestaurant.App.Consola
              {
                  Console.WriteLine("No se encontro el profesor");
              }
-        }
-        //EliminarProfesor
-        private static void EliminarProfesor(int identificacion)
+        }*/
+       // EliminarProfesor
+       /* private static void EliminarProfesor(int identificacion)
         {
            if( _repoProfesor.DeleteProfesor(identificacion))
            Console.WriteLine("Profesor Eliminado");
@@ -97,8 +97,8 @@ namespace CTRestaurant.App.Consola
            {
                Console.WriteLine("No se pudo eliminar el profesor con esta identificacion, verifique que es la identificacion correcta");
            }
-        }
-        //ConsultarProfesores
+        }*/
+        /*ConsultarProfesores
         private static void ConsultarProfesores()
         {
             IEnumerable<Profesor>profesores=_repoProfesor.GetAllProfesores(); 
@@ -107,5 +107,5 @@ namespace CTRestaurant.App.Consola
                 Console.WriteLine(profesor.nombre+" "+profesor.apellido+" "+profesor.Facultad);
             }
         }
-    }
-}
+   }
+}*/

@@ -20,9 +20,9 @@ namespace CTRestaurant.App.Persistencia
           return profesorAdicionado.Entity;
      }
       //BuscarProfesor
-      Profesor IRepositorioProfesor.GetProfesor(int identificacion)
+      Profesor IRepositorioProfesor.GetProfesor(int profesorid)
       {
-         var profesorEncontrado = _appContext.Profesores.FirstOrDefault(p => p.identificacion==identificacion);
+         var profesorEncontrado = _appContext.Profesores.FirstOrDefault(p => p.id==profesorid);
          return profesorEncontrado;
       }
       //ActualizarProfesor
@@ -41,9 +41,9 @@ namespace CTRestaurant.App.Persistencia
           return profesorEncontrado;
       }
       //BorrarProfesor
-      bool IRepositorioProfesor.DeleteProfesor(int identificacion)
+      bool IRepositorioProfesor.DeleteProfesor(int profesorid)
       {
-          var profesorEncontrado = _appContext.Profesores.FirstOrDefault(p=> p.identificacion==identificacion);
+          var profesorEncontrado = _appContext.Profesores.FirstOrDefault(p=> p.id==profesorid);
           if(profesorEncontrado==null)
           return false;
           _appContext.Profesores.Remove(profesorEncontrado);

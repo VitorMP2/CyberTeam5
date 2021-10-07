@@ -1,0 +1,18 @@
+﻿@page
+@model CTRestaurant.App.Frontend.Pages.EliminarModel
+@{
+}
+<h1>Desea Eliminar el profesor</h1>
+<table class="table">
+    <tr>
+            <td>@Model.profesor.nombre</td>
+            <td>@Model.profesor.apellido</td>
+            <td>@Model.profesor.Facultad</td>
+            <td>@Model.profesor.Cubiculo</td>
+            <td>@Model.profesor.edad</td>
+    </tr>
+</table>
+<form method="post">
+    <input type="hidden" asp-for="profesor.id"/>
+    <button type="submit" class="btn btn-primary">Confirmar Eliminar</button>
+</form>

@@ -1,0 +1,4 @@
+C:\Users\blanca\Desktop\Restaurante UC\CyberTeam5\CTRestaurant.App\CTRestaurant.App.Frontend\obj\Debug\netstandard2.1\CTRestaurant.App.Frontend.csprojAssemblyReference.cache
+C:\Users\blanca\Desktop\Restaurante UC\CyberTeam5\CTRestaurant.App\CTRestaurant.App.Frontend\obj\Debug\netstandard2.1\CTRestaurant.App.Frontend.AssemblyInfoInputs.cache
+C:\Users\blanca\Desktop\Restaurante UC\CyberTeam5\CTRestaurant.App\CTRestaurant.App.Frontend\obj\Debug\netstandard2.1\CTRestaurant.App.Frontend.AssemblyInfo.cs
+C:\Users\blanca\Desktop\Restaurante UC\CyberTeam5\CTRestaurant.App\CTRestaurant.App.Frontend\obj\Debug\netstandard2.1\CTRestaurant.App.Frontend.csproj.CoreCompileInputs.cache
