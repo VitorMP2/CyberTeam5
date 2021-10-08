@@ -1,75 +1,105 @@
 ﻿@page
 @model CTRestaurant.App.Frontend.Pages.EditarModel
 @{
-<<<<<<< HEAD
-}
- <h1>Editar Profesor</h1>
- <form method ="post">
-     <input type= "hidden" asp-for="profesor.id">
-      <div class ="form-group">
-         <label asp-for="profesor.nombre"></label>
-         <input asp-for="profesor.nombre" class="form-control">
-         <span class="text-danger" asp-validation-for="profesor.nombre"></span>
-     </div>
-     <div class ="form-group">
-         <label asp-for="profesor.apellido"></label>
-         <input asp-for="profesor.apellido" class="form-control">
-         <span class="text-danger" asp-validation-for="profesor.apellido"></span>
-     </div>
-     <div class ="form-group">
-         <label asp-for="profesor.Facultad"></label>
-         <input asp-for="profesor.Facultad" class="form-control">
-     </div>
-      <div class ="form-group">
-         <label asp-for="profesor.Cubiculo"></label>
-         <input asp-for="profesor.Cubiculo" class="form-control">
-     </div>
-     <div class ="form-group">
-         <label asp-for="profesor.identificacion"></label>
-         <input asp-for="profesor.identificacion" class="form-control">
-         <span class="text-danger" asp-validation-for="profesor.identificacion"></span>
-     </div>
-     <div class ="form-group">
-         <label asp-for="profesor.edad"></label>
-         <input asp-for="profesor.edad" class="form-control">
-     </div>
-     <button type="submit" class="btn btn-primary">Guardar Cambios></button>
- </form>
-=======
-    if (@Model.registro.Id!=0)
+    @switch (@Model.item)
     {
-        ViewData["Title"] = "Editar";
-    }else
-    {
-        ViewData["Title"] = "Agregar";
+        case 1:
+            if (@Model.profesor.id != 0)
+            {
+                ViewData["Title"] = "Editar Profesor";
+            }
+            else
+            {
+                ViewData["Title"] = "Agregar Profesor";
+            }
+            break;
+
+        case 2:
+            if (@Model.registro.Id != 0)
+            {
+                ViewData["Title"] = "Editar Registro";
+            }
+            else
+            {
+                ViewData["Title"] = "Agregar Registro";
+            }
+            break;
+
+        default:
+            break;
     }
-    
+
+
 }
-@if(@Model.registro.Id!=0)
+@switch (@Model.item)
 {
-    <h1>Editar registro @Model.registro.Id</h1>    
-}else{
-    <h1>Agregar registro</h1>
+    case 1:
+
+
+    <h1>Editar Profesor</h1>
+    <form method="post">
+        <input type="hidden" asp-for="profesor.id">
+        <div class="form-group">
+            <label asp-for="profesor.nombre"></label>
+            <input asp-for="profesor.nombre" class="form-control">
+            <span class="text-danger" asp-validation-for="profesor.nombre"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="profesor.apellido"></label>
+            <input asp-for="profesor.apellido" class="form-control">
+            <span class="text-danger" asp-validation-for="profesor.apellido"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="profesor.Facultad"></label>
+            <input asp-for="profesor.Facultad" class="form-control">
+        </div>
+        <div class="form-group">
+            <label asp-for="profesor.Cubiculo"></label>
+            <input asp-for="profesor.Cubiculo" class="form-control">
+        </div>
+        <div class="form-group">
+            <label asp-for="profesor.identificacion"></label>
+            <input asp-for="profesor.identificacion" class="form-control">
+            <span class="text-danger" asp-validation-for="profesor.identificacion"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="profesor.edad"></label>
+            <input asp-for="profesor.edad" class="form-control">
+        </div>
+        <button type="submit" class="btn btn-primary">Guardar Cambios></button>
+    </form>
+    break;
+    case 2:
+        @if (@Model.registro.Id != 0)
+        {
+            <h1>Editar registro @Model.registro.Id</h1>
+        }
+        else
+        {
+            <h1>Agregar registro</h1>
+        }
+        <form method="post">
+            <input type="hidden" asp-for="registro.Id">
+            <div class="form-group">
+                <label asp-for="@Model.registro.FechaRegistro"></label>
+                <input asp-for="@Model.registro.FechaRegistro" class="form-control">
+            </div>
+            <div class="form-group">
+                <label asp-for="@Model.registro.Aforo"></label>
+                <input asp-for="@Model.registro.Aforo" class="form-control">
+            </div>
+            <div class="form-group">
+                <label asp-for="@Model.registro.CantidadMesas"></label>
+                <input asp-for="@Model.registro.CantidadMesas" class="form-control">
+            </div>
+            <div class="form-group">
+                <label asp-for="@Model.registro.PuestosPorMesa"></label>
+                <input asp-for="@Model.registro.PuestosPorMesa" class="form-control">
+            </div>
+            <input class="btn btn-primary" type="button" onclick="history.back()" name="volver atrás" value="Volver Atrás">
+            <button type="submit" class="btn btn-success">Guardar Cambios</button>
+        </form>
+        break;
+    default:
+    break;
 }
-<form method="post">
-    <input type="hidden" asp-for="registro.Id">
-    <div class="form-group">
-        <label asp-for="@Model.registro.FechaRegistro"></label>
-        <input asp-for="@Model.registro.FechaRegistro" class="form-control">
-    </div>
-    <div class="form-group">
-        <label asp-for="@Model.registro.Aforo"></label>
-        <input asp-for="@Model.registro.Aforo" class="form-control">
-    </div>
-    <div class="form-group">
-        <label asp-for="@Model.registro.CantidadMesas"></label>
-        <input asp-for="@Model.registro.CantidadMesas" class="form-control">
-    </div>
-    <div class="form-group">
-        <label asp-for="@Model.registro.PuestosPorMesa"></label>
-        <input asp-for="@Model.registro.PuestosPorMesa" class="form-control">
-    </div>    
-    <input class="btn btn-primary" type="button" onclick="history.back()" name="volver atrás" value="Volver Atrás">
-    <button type="submit" class="btn btn-success">Guardar Cambios</button>
-</form>
->>>>>>> 93413183007c681deb60033ac475aed98e2d5830

@@ -172,3 +172,4 @@ C:\CyberTeam5\CTRestaurant.App\CTRestaurant.App.Frontend\obj\Debug\netcoreapp3.1
 C:\CyberTeam5\CTRestaurant.App\CTRestaurant.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Listas\Editar.cshtml.g.cs
 C:\CyberTeam5\CTRestaurant.App\CTRestaurant.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Listas\Eliminar.cshtml.g.cs
 >>>>>>> 93413183007c681deb60033ac475aed98e2d5830
+C:\CyberTeam5\CTRestaurant.App\CTRestaurant.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Listas\Profesores.cshtml.g.cs

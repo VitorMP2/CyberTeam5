@@ -1,38 +1,55 @@
 ﻿@page
 @model CTRestaurant.App.Frontend.Pages.DetallesModel
 @{
-<<<<<<< HEAD
+    @switch (@Model.item)
+    {
+        case 1:
+            ViewData["Title"] = "Detalles Profesor";
+            break;
+        case 2:
+            ViewData["Title"] = "Detalles Registro";
+            break;
+        default:
+        break;
+    }
+    //ViewData["Title"] = "Detalles";
 }
-<h1>Detalles del profesor</h1>
-<table class="table">
-    <tr>
-            <td>@Model.profesor.nombre</td>
-            <td>@Model.profesor.apellido</td>
-            <td>@Model.profesor.Facultad</td>
-            <td>@Model.profesor.Cubiculo</td>
-            <td>@Model.profesor.edad</td>
-    </tr>
-</table>
-<a class="btn btn-primary text-dark" asp-area="" asp-page="/Listas/Profesores">Profesores</a>
-=======
-    ViewData["Title"] = "Detalles";
-}
-<h1>Detalles del registro @Model.registroRestaurante.Id</h1>
-<table class="table" style="text-align:center;">
-    <tr>
-        
-        <th>Fecha</th>
-        <th>Aforo</th>
-        <th>Cantidad Mesas</th>
-        <th>Puestos Por Mesa</th>        
-    </tr>
-    <tr>
-        <td>@Model.registroRestaurante.FechaRegistro.ToShortDateString()</td>
-        <td>@Model.registroRestaurante.Aforo</td>
-        <td>@Model.registroRestaurante.CantidadMesas</td>
-        <td>@Model.registroRestaurante.PuestosPorMesa</td>
-    </tr>
+@switch (@Model.item)
+{
+    case  1:
 
-</table>
-<input class="btn btn-primary" type="button" onclick="history.back()" name="volver atrás" value="Volver Atrás">
->>>>>>> 93413183007c681deb60033ac475aed98e2d5830
+        <h1>Detalles del profesor</h1>
+        <table class="table">
+            <tr>
+                <td>@Model.profesor.nombre</td>
+                <td>@Model.profesor.apellido</td>
+                <td>@Model.profesor.Facultad</td>
+                <td>@Model.profesor.Cubiculo</td>
+                <td>@Model.profesor.edad</td>
+            </tr>
+        </table>
+    <a class="btn btn-primary text-dark" asp-area="" asp-page="/Listas/Profesores">Profesores</a>
+    break;
+    case  2:
+        <h1>Detalles del registro @Model.registroRestaurante.Id</h1>
+        <table class="table" style="text-align:center;">
+            <tr>
+
+                <th>Fecha</th>
+                <th>Aforo</th>
+                <th>Cantidad Mesas</th>
+                <th>Puestos Por Mesa</th>
+            </tr>
+            <tr>
+                <td>@Model.registroRestaurante.FechaRegistro.ToShortDateString()</td>
+                <td>@Model.registroRestaurante.Aforo</td>
+                <td>@Model.registroRestaurante.CantidadMesas</td>
+                <td>@Model.registroRestaurante.PuestosPorMesa</td>
+            </tr>
+
+        </table>
+    <input class="btn btn-primary" type="button" onclick="history.back()" name="volver atrás" value="Volver Atrás">
+    break;
+    default:
+    break;
+}

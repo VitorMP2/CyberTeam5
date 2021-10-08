@@ -1,44 +1,63 @@
 ﻿@page
 @model CTRestaurant.App.Frontend.Pages.EliminarModel
 @{
-<<<<<<< HEAD
-}
-<h1>Desea Eliminar el profesor</h1>
-<table class="table">
-    <tr>
-            <td>@Model.profesor.nombre</td>
-            <td>@Model.profesor.apellido</td>
-            <td>@Model.profesor.Facultad</td>
-            <td>@Model.profesor.Cubiculo</td>
-            <td>@Model.profesor.edad</td>
-    </tr>
-</table>
-<form method="post">
-    <input type="hidden" asp-for="profesor.id"/>
-    <button type="submit" class="btn btn-primary">Confirmar Eliminar</button>
-=======
-    ViewData["Title"] = "Eliminar";
-}
-<h1>Eliminar Registro @Model.registro.Id</h1>
-<table class="table" style="text-align:center;">
-    <tr>
-        
-        <th>Fecha</th>
-        <th>Aforo</th>
-        <th>Cantidad Mesas</th>
-        <th>Puestos Por Mesa</th>        
-    </tr>
-    <tr>
-        <td>@Model.registro.FechaRegistro.ToShortDateString()</td>
-        <td>@Model.registro.Aforo</td>
-        <td>@Model.registro.CantidadMesas</td>
-        <td>@Model.registro.PuestosPorMesa</td>
-    </tr>
+    @switch (@Model.item)
+    {
+        case 1:
+            ViewData["Title"] = "Eliminar Profesor";
+            break;
+        case 2:
+            ViewData["Title"] = "Eliminar Registro";
+            break;
+        default:
+            break;
+    }
 
-</table>
-<form method="post">
-    <input type="hidden" asp-for="registro.Id">
-    <input class="btn btn-primary" type="button" onclick="history.back()" name="volver atrás" value="Volver Atrás">
-    <button type="submit" class="btn btn-danger">Confirmar Eliminar</button>
->>>>>>> 93413183007c681deb60033ac475aed98e2d5830
-</form>
+}
+@switch (@Model.item)
+{
+    case 1:
+
+        <h1>Desea Eliminar el profesor</h1>
+        <table class="table">
+            <tr>
+                <td>@Model.profesor.nombre</td>
+                <td>@Model.profesor.apellido</td>
+                <td>@Model.profesor.Facultad</td>
+                <td>@Model.profesor.Cubiculo</td>
+                <td>@Model.profesor.edad</td>
+            </tr>
+        </table>
+        <form method="post">
+            <input type="hidden" asp-for="profesor.id" />
+            <button type="submit" class="btn btn-primary">Confirmar Eliminar</button>
+        </form>
+        break;
+    case 2:
+        <h1>Eliminar Registro @Model.registro.Id</h1>
+        <table class="table" style="text-align:center;">
+            <tr>
+
+                <th>Fecha</th>
+                <th>Aforo</th>
+                <th>Cantidad Mesas</th>
+                <th>Puestos Por Mesa</th>
+            </tr>
+            <tr>
+                <td>@Model.registro.FechaRegistro.ToShortDateString()</td>
+                <td>@Model.registro.Aforo</td>
+                <td>@Model.registro.CantidadMesas</td>
+                <td>@Model.registro.PuestosPorMesa</td>
+            </tr>
+
+        </table>
+
+        <form method="post">
+            <input type="hidden" asp-for="registro.Id">
+            <input class="btn btn-primary" type="button" onclick="history.back()" name="volver atrás" value="Volver Atrás">
+            <button type="submit" class="btn btn-danger">Confirmar Eliminar</button>
+        </form>
+        break;
+    default:
+        break;
+}

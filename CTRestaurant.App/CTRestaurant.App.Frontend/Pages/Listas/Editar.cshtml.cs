@@ -6,90 +6,146 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using CTRestaurant.App.Persistencia;
 using CTRestaurant.App.Dominio;
-<<<<<<< HEAD
 
-=======
->>>>>>> 93413183007c681deb60033ac475aed98e2d5830
 namespace CTRestaurant.App.Frontend.Pages
 {
     public class EditarModel : PageModel
     {
-<<<<<<< HEAD
-        private static IRepositorioProfesor _repoProfesor= new RepositorioProfesor(new Persistencia.AppContext());
+        private static IRepositorioProfesor _repoProfesor = new RepositorioProfesor(new Persistencia.AppContext());
         [BindProperty]
-        public Profesor profesor{get;set;}
-        public IActionResult OnGet(int? profesorid)
-
-        {   
-            if (profesorid.HasValue)
+        public Profesor profesor { get; set; }
+        /*public IActionResult OnGet(int? profesorid)
         {
-            profesor= _repoProfesor.GetProfesor(profesorid.Value);  }
+            if (profesorid.HasValue)
+            {
+                profesor = _repoProfesor.GetProfesor(profesorid.Value);
+            }
             else
             {
-                profesor =new Profesor();
+                profesor = new Profesor();
             }
-            if(profesor==null)
+            if (profesor == null)
             {
                 return RedirectToPage("./Profesores");
-            }else 
+            }
+            else
             {
                 return Page();
             }
-        
+
         }
         public IActionResult OnPost()
-        {   if (!ModelState.IsValid)
         {
-            return Page();
-        }else
-        {
-           if(profesor.id>0)
+            if (!ModelState.IsValid)
             {
-                _repoProfesor.UpdateProfesor(profesor);
-
+                return Page();
             }
-            else{
-                _repoProfesor.AddProfesor(profesor);
-            } 
-        }
-            
+            else
+            {
+                if (profesor.id > 0)
+                {
+                    _repoProfesor.UpdateProfesor(profesor);
+
+                }
+                else
+                {
+                    _repoProfesor.AddProfesor(profesor);
+                }
+            }
+
             return RedirectToPage("./Profesores");
-        }
-    }
+        }*/
 
-=======
+
         private static IRepositorioRestaurante _repoRestaurante = new RepositorioRestaurante(new Persistencia.AppContext());
+
+        public int item = 0;
         [BindProperty]
-        public Restaurante registro{get;set;}
-        public IActionResult OnGet(int? IdRegistro)
+        public Restaurante registro { get; set; }
+        public IActionResult OnGet(int? Id, int item)
         {
-            if (IdRegistro.HasValue)
+            this.item = item;
+            switch (item)
             {
-                registro=_repoRestaurante.GetRegistro(IdRegistro.Value);
-            }else
-            {
-                registro= new Restaurante();
+                case 1:
+                    if (Id.HasValue)
+                    {
+                        profesor = _repoProfesor.GetProfesor(Id.Value);
+                        
+                    }
+                    else
+                    {
+                        profesor = new Profesor();
+                        
+                    }
+                    if (profesor == null)
+                    {
+                        return RedirectToPage("./Profesores");
+                    }
+                    else
+                    {
+                        return Page();
+                    };
+                case 2:
+
+                    if (Id.HasValue)
+                    {
+                        registro = _repoRestaurante.GetRegistro(Id.Value);
+                        
+                    }
+                    else
+                    {
+                        registro = new Restaurante();
+                        
+                    }
+
+                    if (registro == null)
+                    {
+                        return RedirectToPage("./RegistrosRestaurante");
+                    }
+                    return Page();
+                default:
+                    return Page();
             }
-            
-            if (registro==null)
-            {
-                return RedirectToPage("./RegistrosRestaurante");
-            }
-            return Page();
         }
-        public IActionResult OnPost()
+        public IActionResult OnPost(int item)
         {
-            if (registro.Id>0)
+            this.item = item;
+            switch (item)
             {
-                _repoRestaurante.UpdateRegistro(registro);
-                
-            }else
-            {
-                _repoRestaurante.AddRegistro(registro);
+                case 1:
+                    /*if (!ModelState.IsValid)
+                    {
+                        return Page();
+                    }
+                    else
+                    {*/
+                        if (profesor.id > 0)
+                        {
+                            _repoProfesor.UpdateProfesor(profesor);
+
+                        }
+                        else
+                        {
+                            _repoProfesor.AddProfesor(profesor);
+                        }
+                    //}
+                    return RedirectToPage("./Profesores");                    
+                case 2:
+                    if (registro.Id > 0)
+                    {
+                        _repoRestaurante.UpdateRegistro(registro);
+
+                    }
+                    else
+                    {
+                        _repoRestaurante.AddRegistro(registro);
+                    }
+
+                    return RedirectToPage("./RegistrosRestaurante");                    
+                default:
+                    return Page();
             }
-            
-            return RedirectToPage("./RegistrosRestaurante");
         }
     }
->>>>>>> 93413183007c681deb60033ac475aed98e2d5830
 }

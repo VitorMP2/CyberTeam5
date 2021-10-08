@@ -1,11 +1,7 @@
 {
   "format": 1,
   "restore": {
-<<<<<<< HEAD
-    "C:\\Users\\blanca\\Desktop\\Restaurante UC\\CyberTeam5\\CTRestaurant.App\\CTRestaurant.App.Persistencia\\CTRestaurant.App.Persistencia.csproj": {}
-=======
     "C:\\CyberTeam5\\CTRestaurant.App\\CTRestaurant.App.Persistencia\\CTRestaurant.App.Persistencia.csproj": {}
->>>>>>> 93413183007c681deb60033ac475aed98e2d5830
   },
   "projects": {
     "C:\\CyberTeam5\\CTRestaurant.App\\CTRestaurant.App.Dominio\\CTRestaurant.App.Dominio.csproj": {
@@ -65,16 +61,6 @@
         }
       }
     },
-<<<<<<< HEAD
-    "C:\\Users\\blanca\\Desktop\\Restaurante UC\\CyberTeam5\\CTRestaurant.App\\CTRestaurant.App.Persistencia\\CTRestaurant.App.Persistencia.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\blanca\\Desktop\\Restaurante UC\\CyberTeam5\\CTRestaurant.App\\CTRestaurant.App.Persistencia\\CTRestaurant.App.Persistencia.csproj",
-        "projectName": "CTRestaurant.App.Persistencia",
-        "projectPath": "C:\\Users\\blanca\\Desktop\\Restaurante UC\\CyberTeam5\\CTRestaurant.App\\CTRestaurant.App.Persistencia\\CTRestaurant.App.Persistencia.csproj",
-        "packagesPath": "C:\\Users\\blanca\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\blanca\\Desktop\\Restaurante UC\\CyberTeam5\\CTRestaurant.App\\CTRestaurant.App.Persistencia\\obj\\",
-=======
     "C:\\CyberTeam5\\CTRestaurant.App\\CTRestaurant.App.Persistencia\\CTRestaurant.App.Persistencia.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -83,7 +69,6 @@
         "projectPath": "C:\\CyberTeam5\\CTRestaurant.App\\CTRestaurant.App.Persistencia\\CTRestaurant.App.Persistencia.csproj",
         "packagesPath": "C:\\Users\\Familia\\.nuget\\packages\\",
         "outputPath": "C:\\CyberTeam5\\CTRestaurant.App\\CTRestaurant.App.Persistencia\\obj\\",
->>>>>>> 93413183007c681deb60033ac475aed98e2d5830
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Familia\\AppData\\Roaming\\NuGet\\NuGet.Config"

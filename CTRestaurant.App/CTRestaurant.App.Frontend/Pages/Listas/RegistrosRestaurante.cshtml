@@ -3,7 +3,7 @@
 @{
     ViewData["Title"] = "Registros";
 }
-<h1>Registros del Restaurante</h1><a class="btn btn-success" asp-page="./Editar">Adicionar Registro</a>
+<h1>Registros del Restaurante</h1><a class="btn btn-success" asp-page="./Editar" asp-route-item="2">Adicionar Registro</a>
 <table class="table" style="text-align:center;">
     <tr>
         <th>ID</th>
@@ -24,19 +24,19 @@
             <td>@registro.CantidadMesas</td>
             <td>@registro.PuestosPorMesa</td>*@
             <td>
-                <a class="btn btn-primary table-btn" asp-page="./Detalles" asp-route-IdRegistro="@registro.Id">
+                <a class="btn btn-primary table-btn" asp-page="./Detalles" asp-route-Id="@registro.Id" asp-route-item="2">
                     <i class="fas fa-info-circle fa-lg" aria-hidden="true"></i>
                     
                 </a>
             </td>
             <td>
-                <a class="btn btn-secondary table-btn" asp-page="./Editar" asp-route-IdRegistro="@registro.Id">
+                <a class="btn btn-secondary table-btn" asp-page="./Editar" asp-route-Id="@registro.Id" asp-route-item="2">
                     <i class="fas fa-address-book fa-lg" aria-hidden="true"></i>
                     
                 </a> 
             </td>
             <td>        
-                <a class="btn btn-danger table-btn" asp-page="./Eliminar" asp-route-IdRegistro="@registro.Id">
+                <a class="btn btn-danger table-btn" asp-page="./Eliminar" asp-route-Id="@registro.Id" asp-route-item="2">
                     <i class="fas fa-trash-alt"></i>
                     
                 </a>

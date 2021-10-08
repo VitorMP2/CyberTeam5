@@ -4,47 +4,63 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-<<<<<<< HEAD
 using CTRestaurant.App.Persistencia;
 using CTRestaurant.App.Dominio;
 
-=======
-using CTRestaurant.App.Dominio;
-using CTRestaurant.App.Persistencia;
->>>>>>> 93413183007c681deb60033ac475aed98e2d5830
+
 namespace CTRestaurant.App.Frontend.Pages
 {
     public class EliminarModel : PageModel
     {
-<<<<<<< HEAD
-        private static IRepositorioProfesor  _repoProfesor= new RepositorioProfesor(new Persistencia.AppContext());
+        private static IRepositorioProfesor _repoProfesor = new RepositorioProfesor(new Persistencia.AppContext());
         [BindProperty]
-        public Profesor profesor{get;set;}
-        
-        public IActionResult OnGet(int profesorid)
+        public Profesor profesor { get; set; }
+
+        /*public IActionResult OnGet(int profesorid)
 
         {
-            profesor= _repoProfesor.GetProfesor(profesorid);
-            return Page ();
-        }
-        public IActionResult OnPost ()
-        {
-            _repoProfesor.DeleteProfesor(profesor.id);
-            return RedirectToPage("./Profesores");
-=======
-        private static IRepositorioRestaurante _repoRestaurante = new RepositorioRestaurante(new Persistencia.AppContext());
-        [BindProperty]
-        public Restaurante registro{get;set;}
-        public IActionResult OnGet(int IdRegistro)
-        {
-            registro=_repoRestaurante.GetRegistro(IdRegistro);
+            profesor = _repoProfesor.GetProfesor(profesorid);
             return Page();
         }
         public IActionResult OnPost()
         {
-            _repoRestaurante.DeleteRegistro(registro.Id);
-            return RedirectToPage("./RegistrosRestaurante");
->>>>>>> 93413183007c681deb60033ac475aed98e2d5830
+            _repoProfesor.DeleteProfesor(profesor.id);
+            return RedirectToPage("./Profesores");
+        }*/
+        private static IRepositorioRestaurante _repoRestaurante = new RepositorioRestaurante(new Persistencia.AppContext());
+        [BindProperty]
+        public Restaurante registro { get; set; }
+        public int item = 0;
+        public IActionResult OnGet(int Id, int item)
+        {
+            this.item = item;
+            switch (item)
+            {
+                case 1:
+                    profesor = _repoProfesor.GetProfesor(Id);
+                    return Page();
+                case 2:
+                    registro = _repoRestaurante.GetRegistro(Id);
+                    return Page();
+                default:
+                    return Page();
+            }
+        }
+        public IActionResult OnPost(int item)
+        {
+            this.item = item;
+            switch (item)
+            {
+                case 1:
+                    _repoProfesor.DeleteProfesor(profesor.id);
+                    return RedirectToPage("./Profesores");
+                case 2:
+                    _repoRestaurante.DeleteRegistro(registro.Id);
+                    return RedirectToPage("./RegistrosRestaurante");
+                default:
+                    return Page();
+            }
         }
     }
 }
+

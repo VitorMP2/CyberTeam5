@@ -1,4 +1,4 @@
-﻿/*using System;
+﻿using System;
 using CTRestaurant.App.Dominio;
 using CTRestaurant.App.Persistencia;
 using System.Collections.Generic;
@@ -15,7 +15,7 @@ namespace CTRestaurant.App.Consola
             //ConsultarProfesor(1000000);
             //EliminarProfesor(100000);
           // ConsultarProfesores();
-            
+        }   
          /*   Profesor profesor_1= new Profesor
             {
                 nombre ="Santiago",
@@ -32,86 +32,81 @@ namespace CTRestaurant.App.Consola
  */     //  }
         //CRUD
         //CrearProfesor
-      /*  private static void CrearProfesor()
-        {
-             var profesor = new Profesor
-             {
-<<<<<<< HEAD
-                  nombre ="Diego",
-                apellido="Restrepo",
-                identificacion=1,
-=======
-                nombre ="Felipe",
-                apellido="Mesa",
-                identificacion=100000,
->>>>>>> 93413183007c681deb60033ac475aed98e2d5830
-                edad=30,
-                estadoCovid=EstadoCOVID.Positivo,
-                Cubiculo="03",
-                Facultad="Ingenieria"
-             };
-            Profesor profesorGuardado  =_repoProfesor.AddProfesor(profesor);
-            if (profesorGuardado!=null)
-            Console.WriteLine("Se registro un profesor con exito");
-            else 
+  private static void CrearProfesor()
+  {
+       var profesor = new Profesor
+       {
+          nombre ="Catalina",
+          apellido="Suarez",
+          identificacion=3445525,
+          edad=28,
+          estadoCovid=EstadoCOVID.Negativo,
+          Cubiculo="10",
+          Facultad="Derecho"
+       };
+      Profesor profesorGuardado  =_repoProfesor.AddProfesor(profesor);
+      if (profesorGuardado!=null)
+      Console.WriteLine("Se registro un profesor con exito");
+      else 
 
-            {
-                 Console.WriteLine("Hubo un error de conexion con la base de datos");     
-            }
-        }*/
-        /*ConsultarProfesor
-        private static void ConsultarProfesor(int identificacion)
-        {
-           Profesor profesorEncontrado= _repoProfesor.GetProfesor(identificacion); 
-           if (profesorEncontrado!=null)
+      {
+           Console.WriteLine("Hubo un error de conexion con la base de datos");     
+      }
+  }
+/*ConsultarProfesor
+private static void ConsultarProfesor(int identificacion)
+{
+   Profesor profesorEncontrado= _repoProfesor.GetProfesor(identificacion); 
+   if (profesorEncontrado!=null)
 
-           Console.WriteLine(profesorEncontrado.nombre);
-           else
-           {
-               Console.WriteLine("Profesor no encontrado");
-           }
-        }*/
-        /*EditarProfesor
-        private static void EditarProfesor()
-        {
-            var profesor = new Profesor
-             {
-                  nombre ="Felipe",
-                apellido="Mesa",
-                identificacion=1000001,
-                edad=30,
-                estadoCovid=EstadoCOVID.Positivo,
-                Cubiculo="03",
-                Facultad="Derecho"
-             }; 
-             var profesorActualizado= _repoProfesor.UpdateProfesor(profesor);
-             if (profesorActualizado!=null)
-             {
-                 Console.WriteLine("Se actualizo el profesor correctamente con identificacion"+profesorActualizado.identificacion);
-
-             }else
-             {
-                 Console.WriteLine("No se encontro el profesor");
-             }
-        }*/
-       // EliminarProfesor
-       /* private static void EliminarProfesor(int identificacion)
-        {
-           if( _repoProfesor.DeleteProfesor(identificacion))
-           Console.WriteLine("Profesor Eliminado");
-           else 
-           {
-               Console.WriteLine("No se pudo eliminar el profesor con esta identificacion, verifique que es la identificacion correcta");
-           }
-        }*/
-        /*ConsultarProfesores
-        private static void ConsultarProfesores()
-        {
-            IEnumerable<Profesor>profesores=_repoProfesor.GetAllProfesores(); 
-            foreach (var profesor in profesores)
-            {
-                Console.WriteLine(profesor.nombre+" "+profesor.apellido+" "+profesor.Facultad);
-            }
-        }
+   Console.WriteLine(profesorEncontrado.nombre);
+   else
+   {
+       Console.WriteLine("Profesor no encontrado");
    }
 }*/
+/*EditarProfesor
+private static void EditarProfesor()
+{
+    var profesor = new Profesor
+     {
+          nombre ="Felipe",
+        apellido="Mesa",
+        identificacion=1000001,
+        edad=30,
+        estadoCovid=EstadoCOVID.Positivo,
+        Cubiculo="03",
+        Facultad="Derecho"
+     }; 
+     var profesorActualizado= _repoProfesor.UpdateProfesor(profesor);
+     if (profesorActualizado!=null)
+     {
+         Console.WriteLine("Se actualizo el profesor correctamente con identificacion"+profesorActualizado.identificacion);
+
+     }else
+     {
+         Console.WriteLine("No se encontro el profesor");
+     }
+}*/
+// EliminarProfesor
+/* private static void EliminarProfesor(int identificacion)
+ {
+    if( _repoProfesor.DeleteProfesor(identificacion))
+    Console.WriteLine("Profesor Eliminado");
+    else 
+    {
+        Console.WriteLine("No se pudo eliminar el profesor con esta identificacion, verifique que es la identificacion correcta");
+    }
+ }*/
+/*ConsultarProfesores
+private static void ConsultarProfesores()
+{
+    IEnumerable<Profesor>profesores=_repoProfesor.GetAllProfesores(); 
+    foreach (var profesor in profesores)
+    {
+        Console.WriteLine(profesor.nombre+" "+profesor.apellido+" "+profesor.Facultad);
+    }
+}
+}
+}*/
+    }}

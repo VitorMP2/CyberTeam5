@@ -1,21 +1,19 @@
 {
   "version": 2,
-<<<<<<< HEAD
-  "dgSpecHash": "6YZjS89uyb7+uyX+eSulZpPNuyF19NukX2gMgt/wgBE+uV3LbbHmgjVYaq4VdDj1oen1lVvSSt+O+L3GIpgHEQ==",
-=======
-  "dgSpecHash": "5tiELPUY1PrOpltoha85+CD7NmsVwGedqWeLKlHtYPskI2LrUsjG7SjlMgevIns0dQsfhhxSg0yJikW6OVBfDg==",
->>>>>>> 93413183007c681deb60033ac475aed98e2d5830
+  "dgSpecHash": "1+Y8tYP4GimW05h6SSK+I9CHIlKCgaLm/NJFaNlLtxUTd3I4tYnkxaMKnPI++XAkq79jdzcez69R1IZ/i28Uxw==",
   "success": true,
   "projectFilePath": "C:\\CyberTeam5\\CTRestaurant.App\\CTRestaurant.App.Dominio\\CTRestaurant.App.Dominio.csproj",
   "expectedPackageFiles": [
-<<<<<<< HEAD
-    "C:\\Users\\blanca\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Users\\blanca\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
-    "C:\\Users\\blanca\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512"
-=======
     "C:\\Users\\Familia\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Users\\Familia\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
->>>>>>> 93413183007c681deb60033ac475aed98e2d5830
+    "C:\\Users\\Familia\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\Familia\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problema al leer el archivo de caché C:\\CyberTeam5\\CTRestaurant.App\\CTRestaurant.App.Dominio\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }
