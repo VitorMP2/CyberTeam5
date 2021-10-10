@@ -25,7 +25,18 @@
             }
             break;
 
-        default:
+        
+            case 3:
+            if (@Model.administrativo.id != 0)
+            {
+                ViewData["Title"] = "Editar Administrativo";
+            }
+            else
+            {
+                ViewData["Title"] = "Agregar Administrativo";
+            }
+            break;
+            default:
             break;
     }
 
@@ -66,6 +77,10 @@
             <label asp-for="profesor.edad"></label>
             <input asp-for="profesor.edad" class="form-control">
         </div>
+        <div class="form-group">
+            <label asp-for="profesor.estadoCovid"></label>
+            <input asp-for="profesor.estadoCovid" class="form-control">
+        </div>
         <button type="submit" class="btn btn-primary">Guardar Cambios></button>
     </form>
     break;
@@ -101,5 +116,45 @@
         </form>
         break;
     default:
+    break;
+     case 3:
+
+
+    <h1>Editar Administrativo</h1>
+    <form method="post">
+        <input type="hidden" asp-for="administrativo.id">
+        <div class="form-group">
+            <label asp-for="administrativo.nombre"></label>
+            <input asp-for="administrativo.nombre" class="form-control">
+            <span class="text-danger" asp-validation-for="administrativo.nombre"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="administrativo.apellido"></label>
+            <input asp-for="administrativo.apellido" class="form-control">
+            <span class="text-danger" asp-validation-for="administrativo.apellido"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="administrativo.Oficina"></label>
+            <input asp-for="administrativo.Oficina" class="form-control">
+        </div>
+        <div class="form-group">
+            <label asp-for="administrativo.Dependencia"></label>
+            <input asp-for="administrativo.Dependencia" class="form-control">
+        </div>
+        <div class="form-group">
+            <label asp-for="administrativo.identificacion"></label>
+            <input asp-for="administrativo.identificacion" class="form-control">
+            <span class="text-danger" asp-validation-for="profesor.identificacion"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="administrativo.edad"></label>
+            <input asp-for="administrativo.edad" class="form-control">
+        </div>
+        <div class="form-group">
+            <label asp-for="administrativo.estadoCovid"></label>
+            <input asp-for="administrativo.estadoCovid" class="form-control">
+        </div>
+        <button type="submit" class="btn btn-primary">Guardar Cambios></button>
+    </form>
     break;
 }

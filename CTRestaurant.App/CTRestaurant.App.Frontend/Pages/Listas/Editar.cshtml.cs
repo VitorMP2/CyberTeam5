@@ -11,6 +11,9 @@ namespace CTRestaurant.App.Frontend.Pages
 {
     public class EditarModel : PageModel
     {
+        private static IRepositorioAdministrativo _repoAdministrativo = new RepositorioAdministrativo(new Persistencia.AppContext());
+        [BindProperty]
+        public Administrativo administrativo { get; set; }
         private static IRepositorioProfesor _repoProfesor = new RepositorioProfesor(new Persistencia.AppContext());
         [BindProperty]
         public Profesor profesor { get; set; }
@@ -104,6 +107,25 @@ namespace CTRestaurant.App.Frontend.Pages
                         return RedirectToPage("./RegistrosRestaurante");
                     }
                     return Page();
+                    case 3:
+                    if (Id.HasValue)
+                    {
+                        administrativo = _repoAdministrativo.GetAdministrativo(Id.Value);
+                        
+                    }
+                    else
+                    {
+                        administrativo = new Administrativo();
+                        
+                    }
+                    if (administrativo == null)
+                    {
+                        return RedirectToPage("./Administrativos");
+                    }
+                    else
+                    {
+                        return Page();
+                    };
                 default:
                     return Page();
             }
@@ -142,7 +164,20 @@ namespace CTRestaurant.App.Frontend.Pages
                         _repoRestaurante.AddRegistro(registro);
                     }
 
-                    return RedirectToPage("./RegistrosRestaurante");                    
+                    return RedirectToPage("./RegistrosRestaurante");   
+                    case 3:
+                   
+                        if (administrativo.id > 0)
+                        {
+                            _repoAdministrativo.UpdateAdministrativo(administrativo);
+
+                        }
+                        else
+                        {
+                            _repoAdministrativo.AddAdministrativo(administrativo);
+                        }
+                    //}
+                    return RedirectToPage("./Administrativos");                  
                 default:
                     return Page();
             }

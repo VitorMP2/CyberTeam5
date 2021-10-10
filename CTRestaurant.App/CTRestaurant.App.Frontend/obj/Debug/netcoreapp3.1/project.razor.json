@@ -14417,6 +14417,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\blanca\\Desktop\\Restaurante UC\\CyberTeam5\\CTRestaurant.App\\CTRestaurant.App.Frontend\\Pages\\Listas\\Administrativos.cshtml",
+      "TargetPath": "Pages\\Listas\\Administrativos.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\blanca\\Desktop\\Restaurante UC\\CyberTeam5\\CTRestaurant.App\\CTRestaurant.App.Frontend\\Pages\\_ViewStart.cshtml",
       "TargetPath": "Pages\\_ViewStart.cshtml",
       "FileKind": "mvc"

@@ -9,6 +9,9 @@
         case 2:
             ViewData["Title"] = "Detalles Registro";
             break;
+        case 3:
+            ViewData["Title"] = "Detalles Administrativo";
+            break;
         default:
         break;
     }
@@ -26,6 +29,7 @@
                 <td>@Model.profesor.Facultad</td>
                 <td>@Model.profesor.Cubiculo</td>
                 <td>@Model.profesor.edad</td>
+                <td>@Model.profesor.estadoCovid</td>
             </tr>
         </table>
     <a class="btn btn-primary text-dark" asp-area="" asp-page="/Listas/Profesores">Profesores</a>
@@ -49,6 +53,21 @@
 
         </table>
     <input class="btn btn-primary" type="button" onclick="history.back()" name="volver atrás" value="Volver Atrás">
+    break;
+    case  3:
+
+        <h1>Detalles de Administrativo</h1>
+        <table class="table">
+            <tr>
+                <td>@Model.administrativo.nombre</td>
+                <td>@Model.administrativo.apellido</td>
+                <td>@Model.administrativo.Oficina</td>
+                <td>@Model.administrativo.Dependencia</td>
+                <td>@Model.administrativo.edad</td>
+                <td>@Model.administrativo.estadoCovid</td>
+            </tr>
+        </table>
+    <a class="btn btn-primary text-dark" asp-area="" asp-page="/Listas/Administrativos">Administrativos</a>
     break;
     default:
     break;

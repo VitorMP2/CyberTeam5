@@ -15,6 +15,9 @@ namespace CTRestaurant.App.Frontend.Pages
         private static IRepositorioProfesor _repoProfesor = new RepositorioProfesor(new Persistencia.AppContext());
         [BindProperty]
         public Profesor profesor { get; set; }
+        private static IRepositorioAdministrativo _repoAdministrativo = new RepositorioAdministrativo(new Persistencia.AppContext());
+        [BindProperty]
+        public Administrativo administrativo { get; set; }
 
         /*public IActionResult OnGet(int profesorid)
 
@@ -42,6 +45,9 @@ namespace CTRestaurant.App.Frontend.Pages
                 case 2:
                     registro = _repoRestaurante.GetRegistro(Id);
                     return Page();
+                case 3:
+                    administrativo = _repoAdministrativo.GetAdministrativo(Id);
+                    return Page();    
                 default:
                     return Page();
             }
@@ -57,6 +63,9 @@ namespace CTRestaurant.App.Frontend.Pages
                 case 2:
                     _repoRestaurante.DeleteRegistro(registro.Id);
                     return RedirectToPage("./RegistrosRestaurante");
+                case 3:
+                    _repoAdministrativo.DeleteAdministrativo(administrativo.id);
+                    return RedirectToPage("./Administrativos");
                 default:
                     return Page();
             }
