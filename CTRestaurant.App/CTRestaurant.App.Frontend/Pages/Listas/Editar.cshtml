@@ -36,6 +36,16 @@
                 ViewData["Title"] = "Agregar Administrativo";
             }
             break;
+             case 4:
+            if (@Model.estudiante.id != 0)
+            {
+                ViewData["Title"] = "Editar Estudiante";
+            }
+            else
+            {
+                ViewData["Title"] = "Agregar Estudiante";
+            }
+            break;
             default:
             break;
     }
@@ -153,6 +163,42 @@
         <div class="form-group">
             <label asp-for="administrativo.estadoCovid"></label>
             <input asp-for="administrativo.estadoCovid" class="form-control">
+        </div>
+        <button type="submit" class="btn btn-primary">Guardar Cambios></button>
+    </form>
+    break;
+     case 4:
+
+
+    <h1>Editar Estudiante</h1>
+    <form method="post">
+        <input type="hidden" asp-for="estudiante.id">
+        <div class="form-group">
+            <label asp-for="estudiante.nombre"></label>
+            <input asp-for="estudiante.nombre" class="form-control">
+            <span class="text-danger" asp-validation-for="estudiante.nombre"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="estudiante.apellido"></label>
+            <input asp-for="estudiante.apellido" class="form-control">
+            <span class="text-danger" asp-validation-for="estudiante.apellido"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="estudiante.Programa"></label>
+            <input asp-for="estudiante.Programa" class="form-control">
+        </div>
+        <div class="form-group">
+            <label asp-for="estudiante.identificacion"></label>
+            <input asp-for="estudiante.identificacion" class="form-control">
+            <span class="text-danger" asp-validation-for="estudiante.identificacion"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="estudiante.edad"></label>
+            <input asp-for="estudiante.edad" class="form-control">
+        </div>
+        <div class="form-group">
+            <label asp-for="estudiante.estadoCovid"></label>
+            <input asp-for="estudiante.estadoCovid" class="form-control">
         </div>
         <button type="submit" class="btn btn-primary">Guardar Cambios></button>
     </form>

@@ -12,6 +12,9 @@
         case 3:
             ViewData["Title"] = "Eliminar Administrativo";
             break;
+        case 4:
+            ViewData["Title"] = "Eliminar Estudiante";
+            break;
         default:
             break;
     }
@@ -79,6 +82,24 @@
         </table>
         <form method="post">
             <input type="hidden" asp-for="administrativo.id" />
+            <button type="submit" class="btn btn-primary">Confirmar Eliminar</button>
+        </form>
+        break;
+     case 4:
+
+        <h1>Desea Eliminar el Estudiante</h1>
+        <table class="table">
+            <tr>
+                <td>@Model.estudiante.nombre</td>
+                <td>@Model.estudiante.apellido</td>
+                <td>@Model.estudiante.Programa</td>
+                <td>@Model.estudiante.edad</td>
+                <td>@Model.estudiante.estadoCovid</td>
+
+            </tr>
+        </table>
+        <form method="post">
+            <input type="hidden" asp-for="estudiante.id" />
             <button type="submit" class="btn btn-primary">Confirmar Eliminar</button>
         </form>
         break;

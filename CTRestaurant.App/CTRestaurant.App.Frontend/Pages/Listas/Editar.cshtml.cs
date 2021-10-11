@@ -14,6 +14,9 @@ namespace CTRestaurant.App.Frontend.Pages
         private static IRepositorioAdministrativo _repoAdministrativo = new RepositorioAdministrativo(new Persistencia.AppContext());
         [BindProperty]
         public Administrativo administrativo { get; set; }
+         private static IRepositorioEstudiante _repoEstudiante = new RepositorioEstudiante(new Persistencia.AppContext());
+        [BindProperty]
+        public Estudiante estudiante { get; set; }
         private static IRepositorioProfesor _repoProfesor = new RepositorioProfesor(new Persistencia.AppContext());
         [BindProperty]
         public Profesor profesor { get; set; }
@@ -126,6 +129,25 @@ namespace CTRestaurant.App.Frontend.Pages
                     {
                         return Page();
                     };
+                     case 4:
+                    if (Id.HasValue)
+                    {
+                        estudiante = _repoEstudiante.GetEstudiante(Id.Value);
+                        
+                    }
+                    else
+                    {
+                        estudiante = new Estudiante();
+                        
+                    }
+                    if (estudiante == null)
+                    {
+                        return RedirectToPage("./Estudiantes");
+                    }
+                    else
+                    {
+                        return Page();
+                    };
                 default:
                     return Page();
             }
@@ -177,7 +199,20 @@ namespace CTRestaurant.App.Frontend.Pages
                             _repoAdministrativo.AddAdministrativo(administrativo);
                         }
                     //}
-                    return RedirectToPage("./Administrativos");                  
+                    return RedirectToPage("./Administrativos");    
+                    case 4:
+                   
+                        if (administrativo.id > 0)
+                        {
+                            _repoEstudiante.UpdateEstudiante(estudiante);
+
+                        }
+                        else
+                        {
+                            _repoEstudiante.AddEstudiante(estudiante);
+                        }
+                    //}
+                    return RedirectToPage("./Estudiantes");               
                 default:
                     return Page();
             }

@@ -30,11 +30,21 @@ namespace CTRestaurant.App.Frontend.Pages
         public Restaurante registroRestaurante { get; set; }
         private static IRepositorioAdministrativo _repoAdministrativo =new RepositorioAdministrativo(new Persistencia.AppContext());
         public Administrativo administrativo{get;set;}
+         private static IRepositorioEstudiante _repoEstudiante =new RepositorioEstudiante(new Persistencia.AppContext());
+        public Estudiante estudiante {get;set;}
         public IActionResult OnGet(int Id, int item)
         {
             this.item=item;
             switch (item)
             {
+                case 4:
+                    estudiante = _repoEstudiante.GetEstudiante(Id);
+        
+                    if (estudiante==null)
+                    {
+                        return  RedirectToPage("./Estudiante");
+                    }
+                    return Page();
                 case 3:
                     administrativo= _repoAdministrativo.GetAdministrativo(Id);
         

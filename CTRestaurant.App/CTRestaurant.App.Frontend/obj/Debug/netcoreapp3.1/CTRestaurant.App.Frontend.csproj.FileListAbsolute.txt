@@ -174,3 +174,4 @@ C:\CyberTeam5\CTRestaurant.App\CTRestaurant.App.Frontend\obj\Debug\netcoreapp3.1
 >>>>>>> 93413183007c681deb60033ac475aed98e2d5830
 C:\CyberTeam5\CTRestaurant.App\CTRestaurant.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Listas\Profesores.cshtml.g.cs
 C:\Users\blanca\Desktop\Restaurante UC\CyberTeam5\CTRestaurant.App\CTRestaurant.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Listas\Administrativos.cshtml.g.cs
+C:\Users\blanca\Desktop\Restaurante UC\CyberTeam5\CTRestaurant.App\CTRestaurant.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Listas\Estudiantes.cshtml.g.cs

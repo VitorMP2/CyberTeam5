@@ -1,0 +1,43 @@
+﻿@page
+@model CTRestaurant.App.Frontend.Pages.EstudiantesModel
+@{
+}
+<h1>Listado Estudiantes</h1>
+<table class="table">
+    @foreach (var estudiante in Model.Estudiantes)
+
+    {
+        <tr>
+            <td>@estudiante.nombre</td>
+            <td>@estudiante.apellido</td>
+            <td>@estudiante.Programa</td>
+            <td>@estudiante.identificacion</td>
+            <td>@estudiante.edad</td>
+            <td>@estudiante.estadoCovid</td>
+            <td>
+                <a class="btn btn-primary table-btn" asp-page="./Detalles" asp-route-Id="@estudiante.id" asp-route-item="4">
+                    <i class="fas fa-info-circle" aria-hidden="true">
+
+                    </i>
+                </a>
+            </td>
+            <td>
+                <a class="btn btn-secondary table-btn" asp-page="./Editar" asp-route-Id="@estudiante.id" asp-route-item="4">
+                    <i class="fas fa-address-book" aria-hidden="true">
+
+                    </i>
+                </a>
+            </td>
+            <td>
+                <a class="btn btn-danger table-btn" asp-page="./Eliminar" asp-route-Id="@estudiante.id" asp-route-item="4">
+                    <i class="fas fa-book-dead" aria-hidden="true">
+
+                    </i>
+                </a>
+            </td>
+        </tr>
+
+    }
+</table>
+<a asp-page=".\Editar" class="btn btn-primry" asp-route-item="4">Adicionar Estudiante</a>
+
