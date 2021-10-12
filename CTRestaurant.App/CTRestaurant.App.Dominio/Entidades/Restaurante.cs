@@ -10,6 +10,6 @@ namespace CTRestaurant.App.Dominio
         public int Aforo{get;set;}
         public int CantidadMesas{get;set;}
         public int PuestosPorMesa{get;set;}
-        //public IEnumerable<Turno> Turnos{get;set;}
+        public System.Collections.Generic.List<Turno> Turnos{get;set;}
     }
 }

@@ -26,18 +26,23 @@ namespace CTRestaurant.App.Persistencia.Migrations
                         .HasColumnType("int")
                         .UseIdentityColumn();
 
-                    b.Property<string>("FechaDiagnostico")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<DateTime>("FechaDiagnostico")
+                        .HasColumnType("datetime2");
 
                     b.Property<string>("PeriodoAislamiento")
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<int?>("PersonaContagiadaid")
+                        .HasColumnType("int");
 
                     b.Property<string>("Sintomas")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
-                    b.ToTable("Contagiados");
+                    b.HasIndex("PersonaContagiadaid");
+
+                    b.ToTable("Contagiado");
                 });
 
             modelBuilder.Entity("CTRestaurant.App.Dominio.Persona", b =>
@@ -118,9 +123,14 @@ namespace CTRestaurant.App.Persistencia.Migrations
                     b.Property<string>("Menu")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int?>("RestauranteId")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
 
                     b.HasIndex("Clienteid");
+
+                    b.HasIndex("RestauranteId");
 
                     b.ToTable("Turno");
                 });
@@ -181,13 +191,31 @@ namespace CTRestaurant.App.Persistencia.Migrations
                     b.HasDiscriminator().HasValue("Profesor");
                 });
 
+            modelBuilder.Entity("CTRestaurant.App.Dominio.Contagiado", b =>
+                {
+                    b.HasOne("CTRestaurant.App.Dominio.Persona", "PersonaContagiada")
+                        .WithMany()
+                        .HasForeignKey("PersonaContagiadaid");
+
+                    b.Navigation("PersonaContagiada");
+                });
+
             modelBuilder.Entity("CTRestaurant.App.Dominio.Turno", b =>
                 {
                     b.HasOne("CTRestaurant.App.Dominio.Persona", "Cliente")
                         .WithMany()
                         .HasForeignKey("Clienteid");
 
+                    b.HasOne("CTRestaurant.App.Dominio.Restaurante", null)
+                        .WithMany("Turnos")
+                        .HasForeignKey("RestauranteId");
+
                     b.Navigation("Cliente");
+                });
+
+            modelBuilder.Entity("CTRestaurant.App.Dominio.Restaurante", b =>
+                {
+                    b.Navigation("Turnos");
                 });
 #pragma warning restore 612, 618
         }
