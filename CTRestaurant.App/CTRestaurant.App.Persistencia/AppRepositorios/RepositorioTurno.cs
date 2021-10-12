@@ -6,7 +6,7 @@ namespace CTRestaurant.App.Persistencia
 {
     public class RepositorioTurno:IRepositorioTurno
     {
-        private readonly AppContext _appContext;
+        private static AppContext _appContext;
 
         public RepositorioTurno(AppContext appContext)
         {

@@ -6,7 +6,7 @@ namespace CTRestaurant.App.Persistencia
 {
     public class RepositorioProfesor : IRepositorioProfesor
     {
-        private readonly AppContext _appContext;
+        private static AppContext _appContext;
         public RepositorioProfesor(AppContext appContext)
         {
             _appContext = appContext;
