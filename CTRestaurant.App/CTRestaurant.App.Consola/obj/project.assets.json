@@ -5801,19 +5801,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\blanca\\.nuget\\packages\\": {}
+    "C:\\Users\\Familia\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\blanca\\Desktop\\Restaurante UC\\CyberTeam5\\CTRestaurant.App\\CTRestaurant.App.Consola\\CTRestaurant.App.Consola.csproj",
+      "projectUniqueName": "C:\\CyberTeam5\\CTRestaurant.App\\CTRestaurant.App.Consola\\CTRestaurant.App.Consola.csproj",
       "projectName": "CTRestaurant.App.Consola",
-      "projectPath": "C:\\Users\\blanca\\Desktop\\Restaurante UC\\CyberTeam5\\CTRestaurant.App\\CTRestaurant.App.Consola\\CTRestaurant.App.Consola.csproj",
-      "packagesPath": "C:\\Users\\blanca\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\blanca\\Desktop\\Restaurante UC\\CyberTeam5\\CTRestaurant.App\\CTRestaurant.App.Consola\\obj\\",
+      "projectPath": "C:\\CyberTeam5\\CTRestaurant.App\\CTRestaurant.App.Consola\\CTRestaurant.App.Consola.csproj",
+      "packagesPath": "C:\\Users\\Familia\\.nuget\\packages\\",
+      "outputPath": "C:\\CyberTeam5\\CTRestaurant.App\\CTRestaurant.App.Consola\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\blanca\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Familia\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
@@ -5824,11 +5824,11 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\blanca\\Desktop\\Restaurante UC\\CyberTeam5\\CTRestaurant.App\\CTRestaurant.App.Dominio\\CTRestaurant.App.Dominio.csproj": {
-              "projectPath": "C:\\Users\\blanca\\Desktop\\Restaurante UC\\CyberTeam5\\CTRestaurant.App\\CTRestaurant.App.Dominio\\CTRestaurant.App.Dominio.csproj"
+            "C:\\CyberTeam5\\CTRestaurant.App\\CTRestaurant.App.Dominio\\CTRestaurant.App.Dominio.csproj": {
+              "projectPath": "C:\\CyberTeam5\\CTRestaurant.App\\CTRestaurant.App.Dominio\\CTRestaurant.App.Dominio.csproj"
             },
-            "C:\\Users\\blanca\\Desktop\\Restaurante UC\\CyberTeam5\\CTRestaurant.App\\CTrestaurant.App.Persistencia\\CTRestaurant.App.Persistencia.csproj": {
-              "projectPath": "C:\\Users\\blanca\\Desktop\\Restaurante UC\\CyberTeam5\\CTRestaurant.App\\CTrestaurant.App.Persistencia\\CTRestaurant.App.Persistencia.csproj"
+            "C:\\CyberTeam5\\CTRestaurant.App\\CTrestaurant.App.Persistencia\\CTRestaurant.App.Persistencia.csproj": {
+              "projectPath": "C:\\CyberTeam5\\CTRestaurant.App\\CTrestaurant.App.Persistencia\\CTRestaurant.App.Persistencia.csproj"
             }
           }
         }
@@ -5864,7 +5864,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.413\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.412\\RuntimeIdentifierGraph.json"
       }
     }
   }

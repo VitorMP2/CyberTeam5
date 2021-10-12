@@ -8,7 +8,7 @@ namespace CTRestaurant.App.Persistencia
         public DbSet<Persona> Personas{get;set;}
         public DbSet<Estudiante> Estudiantes{get;set;}
         public DbSet<Administrativo> Administrativos {get;set;}
-        public DbSet<Contagiado> Contagiados {get;set;}
+        public DbSet<Contagiado> Contagiado {get;set;}
         public DbSet<PersonalAseo> PersonalAseo {get;set;}
         public DbSet<PersonalCocina> PersonalCocina {get;set;}
         public DbSet<Profesor> Profesores {get;set;}
