@@ -34,11 +34,21 @@ namespace CTRestaurant.App.Frontend.Pages
         public Estudiante estudiante {get;set;}
           private static IRepositorioPersonalAseo _repoPersonalAseo =new RepositorioPersonalAseo(new Persistencia.AppContext());
         public PersonalAseo personalAseo {get;set;}
+        private static IRepositorioPersonalCocina _repoPersonalCocina =new RepositorioPersonalCocina(new Persistencia.AppContext());
+        public PersonalCocina personalCocina {get;set;}
         public IActionResult OnGet(int Id, int item)
         {
             this.item=item;
             switch (item)
             {
+                case 6:
+                    personalCocina = _repoPersonalCocina.GetPersonalCocina(Id);
+        
+                    if (personalCocina==null)
+                    {
+                        return  RedirectToPage("./PersonalCocina");
+                    }
+                    return Page();
                 case 5:
                     personalAseo = _repoPersonalAseo.GetPersonalAseo(Id);
         

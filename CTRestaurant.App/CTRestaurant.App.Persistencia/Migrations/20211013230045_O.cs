@@ -2,7 +2,7 @@
 
 namespace CTRestaurant.App.Persistencia.Migrations
 {
-    public partial class m : Migration
+    public partial class O : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

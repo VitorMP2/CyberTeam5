@@ -23,6 +23,9 @@ namespace CTRestaurant.App.Frontend.Pages
          private static IRepositorioPersonalAseo _repoPersonalAseo = new RepositorioPersonalAseo(new Persistencia.AppContext());
         [BindProperty]
         public PersonalAseo personalAseo { get; set; }
+         private static IRepositorioPersonalCocina _repoPersonalCocina = new RepositorioPersonalCocina(new Persistencia.AppContext());
+        [BindProperty]
+        public PersonalCocina personalCocina { get; set; }
         /*public IActionResult OnGet(int? profesorid)
         {
             if (profesorid.HasValue)
@@ -170,6 +173,25 @@ namespace CTRestaurant.App.Frontend.Pages
                     {
                         return Page();
                     };
+                     case 6:
+                    if (Id.HasValue)
+                    {
+                        personalCocina = _repoPersonalCocina.GetPersonalCocina(Id.Value);
+                        
+                    }
+                    else
+                    {
+                        personalCocina= new PersonalCocina();
+                        
+                    }
+                    if (personalCocina == null)
+                    {
+                        return RedirectToPage("./PersonalCocina");
+                    }
+                    else
+                    {
+                        return Page();
+                    };
                 default:
                     return Page();
             }
@@ -247,7 +269,20 @@ namespace CTRestaurant.App.Frontend.Pages
                             _repoPersonalAseo.AddPersonalAseo(personalAseo);
                         }
                     //}
-                    return RedirectToPage("./PersonalAseo");              
+                    return RedirectToPage("./PersonalAseo"); 
+                     case 6:
+                   
+                        if (personalCocina.id > 0)
+                        {
+                            _repoPersonalCocina.UpdatePersonalCocina(personalCocina);
+
+                        }
+                        else
+                        {
+                            _repoPersonalCocina.AddPersonalCocina(personalCocina);
+                        }
+                    //}
+                    return RedirectToPage("./PersonalCocina");              
                 default:
                     return Page();
             }
