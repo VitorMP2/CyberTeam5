@@ -39,13 +39,14 @@ namespace CTRestaurant.App.Persistencia
             return RegistroEncontrado;
         }
 
-        void IRepositorioRestaurante.DeleteRegistro (int IdRegistro)
+        bool IRepositorioRestaurante.DeleteRegistro (int IdRegistro)
         {
             var RegistroEncontrado=_appContext.Restaurante.FirstOrDefault(r => r.Id==IdRegistro);
             if(RegistroEncontrado==null)
-                return;
+                return false;
             _appContext.Restaurante.Remove(RegistroEncontrado);
             _appContext.SaveChanges();
+            return true;
         }
 
         Restaurante IRepositorioRestaurante.GetRegistro (int IdRegistro)

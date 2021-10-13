@@ -20,9 +20,9 @@ namespace CTRestaurant.App.Persistencia
             return estudianteAdicionado.Entity;
         }
         //BuscarEstudiante
-        Estudiante IRepositorioEstudiante.GetEstudiante(int estudianteid)
+        Estudiante IRepositorioEstudiante.GetEstudiante(int estudianteIdentificacion)
         {
-            var estudianteEncontrado = _appContext.Estudiantes.FirstOrDefault(p => p.id == estudianteid);
+            var estudianteEncontrado = _appContext.Estudiantes.FirstOrDefault(p => p.identificacion == estudianteIdentificacion);
             return estudianteEncontrado;
         }
         //ActualizarEstudiante
@@ -31,12 +31,12 @@ namespace CTRestaurant.App.Persistencia
             var estudianteEncontrado = _appContext.Estudiantes.FirstOrDefault(p => p.identificacion == estudiante.identificacion);
             if (estudianteEncontrado != null)
             {
-                estudianteEncontrado.nombre =  estudiante.nombre;
-                 estudianteEncontrado.apellido =  estudiante.apellido;
-                 estudianteEncontrado.identificacion =  estudiante.identificacion;
-                 estudianteEncontrado.Programa =  estudiante.Programa;
-                 estudianteEncontrado.edad =  estudiante.edad;
-                 estudianteEncontrado.estadoCovid =  estudiante.estadoCovid;
+                estudianteEncontrado.nombre = estudiante.nombre;
+                estudianteEncontrado.apellido = estudiante.apellido;
+                estudianteEncontrado.identificacion = estudiante.identificacion;
+                estudianteEncontrado.Programa = estudiante.Programa;
+                estudianteEncontrado.edad = estudiante.edad;
+                estudianteEncontrado.estadoCovid = estudiante.estadoCovid;
                 _appContext.SaveChanges();
             }
             return estudianteEncontrado;

@@ -9,7 +9,7 @@ namespace CTRestaurant.App.Persistencia
         //AddEstudiante
         Estudiante AddEstudiante(Estudiante estudiante);
         //GetEstudiante
-        Estudiante GetEstudiante(int estudianteid);
+        Estudiante GetEstudiante(int estudianteIdentificacion);
         //UpdateEstudiante
         Estudiante UpdateEstudiante(Estudiante estudiante);
         //DeleteEstudiante

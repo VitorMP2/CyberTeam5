@@ -20,9 +20,9 @@ namespace CTRestaurant.App.Persistencia
             return administrativoAdicionado.Entity;
         }
         //BuscarProfesor
-        Administrativo IRepositorioAdministrativo.GetAdministrativo(int administrativoid)
+        Administrativo IRepositorioAdministrativo.GetAdministrativo(int administrativoIdentificacion)
         {
-            var administrativoEncontrado = _appContext.Administrativos.FirstOrDefault(p => p.id == administrativoid);
+            var administrativoEncontrado = _appContext.Administrativos.FirstOrDefault(p => p.identificacion == administrativoIdentificacion);
             return administrativoEncontrado;
         }
         //ActualizarProfesor

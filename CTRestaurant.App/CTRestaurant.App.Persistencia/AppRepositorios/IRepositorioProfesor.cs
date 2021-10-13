@@ -10,7 +10,7 @@ namespace CTRestaurant.App.Persistencia
         //AddProfesor
         Profesor AddProfesor(Profesor profesor);
         //GetProfesor
-        Profesor GetProfesor(int profesorid);
+        Profesor GetProfesor(int profesorIdentificacion);
         //UpdateProfesor
         Profesor UpdateProfesor(Profesor profesor);
         //DeleteProfesor

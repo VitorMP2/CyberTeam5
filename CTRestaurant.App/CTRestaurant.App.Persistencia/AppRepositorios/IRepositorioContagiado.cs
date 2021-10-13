@@ -5,13 +5,13 @@ namespace CTRestaurant.App.Persistencia
 {
     public interface IRepositorioContagiado
     {
-        IEnumerable<Contagiado> GetAllContagiado();
+        IEnumerable<Contagiado> GetAllContagiados();
 
         Contagiado AddContagiado (Contagiado contagiado);
 
         Contagiado UpdateContagiado (Contagiado contagiado);
 
-        void DeleteContagiado (int IdContagiado);
+        bool DeleteContagiado (int IdContagiado);
 
         Contagiado GetContagiado (int IdContagiado);
     }

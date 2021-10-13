@@ -20,9 +20,9 @@ namespace CTRestaurant.App.Persistencia
             return profesorAdicionado.Entity;
         }
         //BuscarProfesor
-        Profesor IRepositorioProfesor.GetProfesor(int profesorid)
+        Profesor IRepositorioProfesor.GetProfesor(int profesorIdentificacion)
         {
-            var profesorEncontrado = _appContext.Profesores.FirstOrDefault(p => p.id == profesorid);
+            var profesorEncontrado = _appContext.Profesores.FirstOrDefault(p => p.identificacion == profesorIdentificacion);
             return profesorEncontrado;
         }
         //ActualizarProfesor

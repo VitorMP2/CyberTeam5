@@ -9,7 +9,7 @@ namespace CTRestaurant.App.Persistencia
         //AddAdministrativo
         Administrativo AddAdministrativo(Administrativo administrativo);
         //GetAdministrativo
-        Administrativo GetAdministrativo(int administrativoid);
+        Administrativo GetAdministrativo(int administrativoIdentificacion);
         //UpdateAdministrativo
         Administrativo UpdateAdministrativo(Administrativo administrativo);
         //DeleteAdministrativo

@@ -12,7 +12,7 @@ namespace CTRestaurant.App.Persistencia
         {
             _appContext = appContext;
         }
-        IEnumerable<Contagiado> IRepositorioContagiado.GetAllContagiado()
+        IEnumerable<Contagiado> IRepositorioContagiado.GetAllContagiados()
         {
             return _appContext.Contagiado;
         }
@@ -39,13 +39,14 @@ namespace CTRestaurant.App.Persistencia
             return ContagiadoEncontrado;
         }
 
-        void IRepositorioContagiado.DeleteContagiado(int IdContagiado)
+        bool IRepositorioContagiado.DeleteContagiado(int IdContagiado)
         {
             var ContagiadoEncontrado = _appContext.Contagiado.FirstOrDefault(r => r.Id == IdContagiado);
             if (ContagiadoEncontrado == null)
-                return;
+                return false;
             _appContext.Contagiado.Remove(ContagiadoEncontrado);
             _appContext.SaveChanges();
+            return true;
         }
 
         Contagiado IRepositorioContagiado.GetContagiado(int IdContagiado)

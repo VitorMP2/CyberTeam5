@@ -11,7 +11,7 @@ namespace CTRestaurant.App.Persistencia
 
         Restaurante UpdateRegistro (Restaurante Registro);
 
-        void DeleteRegistro (int IdRegistro);
+        bool DeleteRegistro (int IdRegistro);
 
         Restaurante GetRegistro (int IdRegistro);
     }
