@@ -14447,6 +14447,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\blanca\\Desktop\\Restaurante UC\\CyberTeam5\\CTRestaurant.App\\CTRestaurant.App.Frontend\\Pages\\Listas\\PersonalCocina.cshtml",
+      "TargetPath": "Pages\\Listas\\PersonalCocina.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\blanca\\Desktop\\Restaurante UC\\CyberTeam5\\CTRestaurant.App\\CTRestaurant.App.Frontend\\Pages\\Shared\\_Layout.cshtml",
       "TargetPath": "Pages\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"
@@ -14464,6 +14469,11 @@
     {
       "FilePath": "c:\\Users\\blanca\\Desktop\\Restaurante UC\\CyberTeam5\\CTRestaurant.App\\CTRestaurant.App.Frontend\\Pages\\Listas\\Profesores.cshtml",
       "TargetPath": "Pages\\Listas\\Profesores.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\blanca\\Desktop\\Restaurante UC\\CyberTeam5\\CTRestaurant.App\\CTRestaurant.App.Frontend\\Pages\\Listas\\PersonalAseo.cshtml",
+      "TargetPath": "Pages\\Listas\\PersonalAseo.cshtml",
       "FileKind": "mvc"
     },
     {

@@ -1,0 +1,42 @@
+﻿@page
+@model CTRestaurant.App.Frontend.Pages.PersonalAseoModel
+@{
+}
+<h1>Listado PersonalAseo</h1>
+<table class="table">
+    @foreach (var personalAseo in Model.PersonalAseos)
+
+    {
+        <tr>
+            <td>@personalAseo.nombre</td>
+            <td>@personalAseo.apellido</td>
+            <td>@personalAseo.Turno_servcio_aseo</td>
+            <td>@personalAseo.identificacion</td>
+            <td>@personalAseo.edad</td>
+            <td>@personalAseo.estadoCovid</td>
+            <td>
+                <a class="btn btn-primary table-btn" asp-page="./Detalles" asp-route-Id="@personalAseo.id" asp-route-item="5">
+                    <i class="fas fa-info-circle" aria-hidden="true">
+
+                    </i>
+                </a>
+            </td>
+            <td>
+                <a class="btn btn-secondary table-btn" asp-page="./Editar" asp-route-Id="@personalAseo.id" asp-route-item="5">
+                    <i class="fas fa-address-book" aria-hidden="true">
+
+                    </i>
+                </a>
+            </td>
+            <td>
+                <a class="btn btn-danger table-btn" asp-page="./Eliminar" asp-route-Id="@personalAseo.id" asp-route-item="5">
+                    <i class="fas fa-book-dead" aria-hidden="true">
+
+                    </i>
+                </a>
+            </td>
+        </tr>
+
+    }
+</table>
+<a asp-page=".\Editar" class="btn btn-primry" asp-route-item="5">Adicionar Personal de  Aseo</a>

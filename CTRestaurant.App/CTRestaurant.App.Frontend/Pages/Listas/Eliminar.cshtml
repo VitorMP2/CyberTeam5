@@ -1,4 +1,4 @@
-﻿@page
+@page
 @model CTRestaurant.App.Frontend.Pages.EliminarModel
 @{
     @switch (@Model.item)
@@ -14,6 +14,12 @@
             break;
         case 4:
             ViewData["Title"] = "Eliminar Estudiante";
+            break;
+        case 5:
+            ViewData["Title"] = "Eliminar Personal Aseo";
+            break;
+        case 6:
+            ViewData["Title"] = "Eliminar Personal Cocina";
             break;
         default:
             break;
@@ -100,6 +106,42 @@
         </table>
         <form method="post">
             <input type="hidden" asp-for="estudiante.id" />
+            <button type="submit" class="btn btn-primary">Confirmar Eliminar</button>
+        </form>
+        break;
+         case 5:
+
+        <h1>Desea Eliminar el Personal de Aseo</h1>
+        <table class="table">
+            <tr>
+                <td>@Model.personalAseo.nombre</td>
+                <td>@Model.personalAseo.apellido</td>
+                <td>@Model.personalAseo.Turno_servcio_aseo</td>
+                <td>@Model.personalAseo.edad</td>
+                <td>@Model.personalAseo.estadoCovid</td>
+
+            </tr>
+        </table>
+        <form method="post">
+            <input type="hidden" asp-for="personalAseo.id" />
+            <button type="submit" class="btn btn-primary">Confirmar Eliminar</button>
+        </form>
+        break;
+        case 6:
+
+        <h1>Desea Eliminar el Personal de Cocina</h1>
+        <table class="table">
+            <tr>
+                <td>@Model.personalCocina.nombre</td>
+                <td>@Model.personalCocina.apellido</td>
+                <td>@Model.personalCocina.Turno_servcio_cocina</td>
+                <td>@Model.personalCocina.edad</td>
+                <td>@Model.personalCocina.estadoCovid</td>
+
+            </tr>
+        </table>
+        <form method="post">
+            <input type="hidden" asp-for="personalCocina.id" />
             <button type="submit" class="btn btn-primary">Confirmar Eliminar</button>
         </form>
         break;

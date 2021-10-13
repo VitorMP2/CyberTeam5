@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CTRestaurant.App.Persistencia.Migrations
 {
     [DbContext(typeof(AppContext))]
-    [Migration("20211012021921_Entidades")]
-    partial class Entidades
+    [Migration("20211013230045_O")]
+    partial class O
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

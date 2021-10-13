@@ -175,3 +175,5 @@ C:\CyberTeam5\CTRestaurant.App\CTRestaurant.App.Frontend\obj\Debug\netcoreapp3.1
 C:\CyberTeam5\CTRestaurant.App\CTRestaurant.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Listas\Profesores.cshtml.g.cs
 C:\Users\blanca\Desktop\Restaurante UC\CyberTeam5\CTRestaurant.App\CTRestaurant.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Listas\Administrativos.cshtml.g.cs
 C:\Users\blanca\Desktop\Restaurante UC\CyberTeam5\CTRestaurant.App\CTRestaurant.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Listas\Estudiantes.cshtml.g.cs
+C:\Users\blanca\Desktop\Restaurante UC\CyberTeam5\CTRestaurant.App\CTRestaurant.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Listas\PersonalAseo.cshtml.g.cs
+C:\Users\blanca\Desktop\Restaurante UC\CyberTeam5\CTRestaurant.App\CTRestaurant.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Listas\PersonalCocina.cshtml.g.cs

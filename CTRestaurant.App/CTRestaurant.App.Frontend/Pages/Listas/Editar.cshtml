@@ -46,6 +46,26 @@
                 ViewData["Title"] = "Agregar Estudiante";
             }
             break;
+             case 5:
+            if (@Model.personalAseo.id != 0)
+            {
+                ViewData["Title"] = "Editar Personal Aseo";
+            }
+            else
+            {
+                ViewData["Title"] = "Agregar Persoal Aseo";
+            }
+            break;
+             case 6:
+            if (@Model.personalCocina.id != 0)
+            {
+                ViewData["Title"] = "Editar Personal Cocina";
+            }
+            else
+            {
+                ViewData["Title"] = "Agregar Persoal Cocina";
+            }
+            break;
             default:
             break;
     }
@@ -199,6 +219,78 @@
         <div class="form-group">
             <label asp-for="estudiante.estadoCovid"></label>
             <input asp-for="estudiante.estadoCovid" class="form-control">
+        </div>
+        <button type="submit" class="btn btn-primary">Guardar Cambios></button>
+    </form>
+    break;
+      case 5:
+
+
+    <h1>Editar PersonalAseo</h1>
+    <form method="post">
+        <input type="hidden" asp-for="personalAseo.id">
+        <div class="form-group">
+            <label asp-for="personalAseo.nombre"></label>
+            <input asp-for="personalAseo.nombre" class="form-control">
+            <span class="text-danger" asp-validation-for="personalAseo.nombre"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="personalAseo.apellido"></label>
+            <input asp-for="personalAseo.apellido" class="form-control">
+            <span class="text-danger" asp-validation-for="personalAseo.apellido"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="personalAseo.Turno_servcio_aseo"></label>
+            <input asp-for="personalAseo.Turno_servcio_aseo" class="form-control">
+        </div>
+        <div class="form-group">
+            <label asp-for="personalAseo.identificacion"></label>
+            <input asp-for="personalAseo.identificacion" class="form-control">
+            <span class="text-danger" asp-validation-for="personalAseo.identificacion"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="personalAseo.edad"></label>
+            <input asp-for="personalAseo.edad" class="form-control">
+        </div>
+        <div class="form-group">
+            <label asp-for="personalAseo.estadoCovid"></label>
+            <input asp-for="personalAseo.estadoCovid" class="form-control">
+        </div>
+        <button type="submit" class="btn btn-primary">Guardar Cambios></button>
+    </form>
+    break;
+     case 6:
+
+
+    <h1>Editar PersonalCocina</h1>
+    <form method="post">
+        <input type="hidden" asp-for="personalCocina.id">
+        <div class="form-group">
+            <label asp-for="personalCocina.nombre"></label>
+            <input asp-for="personalCocina.nombre" class="form-control">
+            <span class="text-danger" asp-validation-for="personalCocina.nombre"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="personalCocina.apellido"></label>
+            <input asp-for="personalCocina.apellido" class="form-control">
+            <span class="text-danger" asp-validation-for="personalCocina.apellido"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="personalCocina.Turno_servcio_cocina"></label>
+            <input asp-for="personalCocina.Turno_servcio_cocina" class="form-control">
+        </div>
+        <div class="form-group">
+            <label asp-for="personalCocina.identificacion"></label>
+            <input asp-for="personalCocina.identificacion" class="form-control">
+            <span class="text-danger" asp-validation-for="personalCocina.identificacion"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="personalCocina.edad"></label>
+            <input asp-for="personalCocina.edad" class="form-control">
+        </div>
+        <div class="form-group">
+            <label asp-for="personalCocina.estadoCovid"></label>
+            <input asp-for="personalCocina.estadoCovid" class="form-control">
         </div>
         <button type="submit" class="btn btn-primary">Guardar Cambios></button>
     </form>
