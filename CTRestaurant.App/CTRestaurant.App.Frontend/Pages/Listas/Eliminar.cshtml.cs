@@ -21,6 +21,9 @@ namespace CTRestaurant.App.Frontend.Pages
         private static IRepositorioEstudiante _repoEstudiante = new RepositorioEstudiante(new Persistencia.AppContext());
         [BindProperty]
         public Estudiante estudiante { get; set; }
+        private static IRepositorioPersonalAseo _repoPersonalAseo = new RepositorioPersonalAseo(new Persistencia.AppContext());
+        [BindProperty]
+        public PersonalAseo personalAseo { get; set; }
 
         /*public IActionResult OnGet(int profesorid)
 
@@ -53,7 +56,10 @@ namespace CTRestaurant.App.Frontend.Pages
                     return Page();    
                      case 4:
                     estudiante = _repoEstudiante.GetEstudiante(Id);
-                    return Page();    
+                    return Page();   
+                    case 5:
+                    personalAseo = _repoPersonalAseo.GetPersonalAseo(Id);
+                    return Page(); 
                 default:
                     return Page();
             }
@@ -75,6 +81,9 @@ namespace CTRestaurant.App.Frontend.Pages
                 case 4:
                     _repoEstudiante.DeleteEstudiante(estudiante.id);
                     return RedirectToPage("./Estudiantes");
+                case 5:
+                    _repoPersonalAseo.DeletePersonalAseo(personalAseo.id);
+                    return RedirectToPage("./PersonalAseo");
                 default:
                     return Page();
             }

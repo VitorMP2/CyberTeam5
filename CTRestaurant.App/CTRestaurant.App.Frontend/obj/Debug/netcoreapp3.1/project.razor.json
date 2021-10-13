@@ -14467,6 +14467,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\blanca\\Desktop\\Restaurante UC\\CyberTeam5\\CTRestaurant.App\\CTRestaurant.App.Frontend\\Pages\\Listas\\PersonalAseo.cshtml",
+      "TargetPath": "Pages\\Listas\\PersonalAseo.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\blanca\\Desktop\\Restaurante UC\\CyberTeam5\\CTRestaurant.App\\CTRestaurant.App.Frontend\\Pages\\Shared\\_ValidationScriptsPartial.cshtml",
       "TargetPath": "Pages\\Shared\\_ValidationScriptsPartial.cshtml",
       "FileKind": "mvc"

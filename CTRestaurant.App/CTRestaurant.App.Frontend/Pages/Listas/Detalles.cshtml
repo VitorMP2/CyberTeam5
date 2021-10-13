@@ -1,4 +1,4 @@
-﻿@page
+@page
 @model CTRestaurant.App.Frontend.Pages.DetallesModel
 @{
     @switch (@Model.item)
@@ -14,6 +14,9 @@
             break;
         case 4:
             ViewData["Title"] = "Detalles Estudiante";
+            break;
+        case 5:
+            ViewData["Title"] = "Detalles Personal  Aseo";
             break;
         default:
         break;
@@ -85,6 +88,20 @@
             </tr>
         </table>
     <a class="btn btn-primary text-dark" asp-area="" asp-page="/Listas/Estudiantes">Estudiantes</a>
+    break;
+    case  5:
+
+        <h1>Detalles de Personal Aseo</h1>
+        <table class="table">
+            <tr>
+                <td>@Model.personalAseo.nombre</td>
+                <td>@Model.personalAseo.apellido</td>
+                <td>@Model.personalAseo.Turno_servcio_aseo</td>
+                <td>@Model.personalAseo.edad</td>
+                <td>@Model.personalAseo.estadoCovid</td>
+            </tr>
+        </table>
+    <a class="btn btn-primary text-dark" asp-area="" asp-page="/Listas/PersonalAseo">PersonalAseo</a>
     break;
     default:
     break;

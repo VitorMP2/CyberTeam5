@@ -20,6 +20,9 @@ namespace CTRestaurant.App.Frontend.Pages
         private static IRepositorioProfesor _repoProfesor = new RepositorioProfesor(new Persistencia.AppContext());
         [BindProperty]
         public Profesor profesor { get; set; }
+         private static IRepositorioPersonalAseo _repoPersonalAseo = new RepositorioPersonalAseo(new Persistencia.AppContext());
+        [BindProperty]
+        public PersonalAseo personalAseo { get; set; }
         /*public IActionResult OnGet(int? profesorid)
         {
             if (profesorid.HasValue)
@@ -148,6 +151,25 @@ namespace CTRestaurant.App.Frontend.Pages
                     {
                         return Page();
                     };
+                     case 5:
+                    if (Id.HasValue)
+                    {
+                        personalAseo = _repoPersonalAseo.GetPersonalAseo(Id.Value);
+                        
+                    }
+                    else
+                    {
+                        personalAseo= new PersonalAseo();
+                        
+                    }
+                    if (personalAseo == null)
+                    {
+                        return RedirectToPage("./PersonalAseo");
+                    }
+                    else
+                    {
+                        return Page();
+                    };
                 default:
                     return Page();
             }
@@ -212,7 +234,20 @@ namespace CTRestaurant.App.Frontend.Pages
                             _repoEstudiante.AddEstudiante(estudiante);
                         }
                     //}
-                    return RedirectToPage("./Estudiantes");               
+                    return RedirectToPage("./Estudiantes"); 
+                    case 5:
+                   
+                        if (personalAseo.id > 0)
+                        {
+                            _repoPersonalAseo.UpdatePersonalAseo(personalAseo);
+
+                        }
+                        else
+                        {
+                            _repoPersonalAseo.AddPersonalAseo(personalAseo);
+                        }
+                    //}
+                    return RedirectToPage("./PersonalAseo");              
                 default:
                     return Page();
             }
