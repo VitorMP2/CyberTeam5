@@ -9,11 +9,11 @@ namespace CTRestaurant.App.Persistencia
         //AddPersonalAseo
         PersonalAseo AddPersonalAseo(PersonalAseo personalAseo);
         //GetPersonalAseo
-        PersonalAseo GetPersonalAseo(int personalAseoid);
+        PersonalAseo GetPersonalAseo(int personalAseoIdentificacion);
         //UpdatePersonalAseo
         PersonalAseo UpdatePersonalAseo(PersonalAseo personalAseo);
         //DeletePersonalAseo
-        bool DeletePersonalAseo(int PersonalAseoid);
+        bool DeletePersonalAseo(int personalAseoIdentificacion);
         //GetAllPersonalAseo
         IEnumerable<PersonalAseo>  GetAllPersonalAseos();
 
