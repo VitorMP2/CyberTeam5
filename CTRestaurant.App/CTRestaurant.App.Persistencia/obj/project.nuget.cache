@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4RwWYAR/lpXbFSj/fucINeRwZhoCyi/PdZwXCRkXT+bOuAc2Q8fXsNlcadQLVZPPqYmqpnma6X5Fuh/6T4Ponw==",
+  "dgSpecHash": "JYC5kwgiN0w87vt1ccxo5w9spKm1nAwcCQG7c3vD7qCxnnpmhnCwX9Z4peMs3dg1i0QRROmq2Wc1qlrjdddKoQ==",
   "success": true,
-  "projectFilePath": "C:\\CyberTeam5\\CTRestaurant.App\\CTrestaurant.App.Persistencia\\CTRestaurant.App.Persistencia.csproj",
+  "projectFilePath": "C:\\CyberTeam5\\CTRestaurant.App\\CTRestaurant.App.Persistencia\\CTRestaurant.App.Persistencia.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Familia\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Familia\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

@@ -7,9 +7,11 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using CTRestaurant.App.Dominio;
 using CTRestaurant.App.Persistencia;
+using Microsoft.AspNetCore.Authorization;
 
 namespace CTRestaurant.App.Frontend.Pages
 {
+    [Authorize]
     public class RegistrosRestauranteModel : PageModel
     {
         private static IRepositorioRestaurante _repoRestaurante = new RepositorioRestaurante(new Persistencia.AppContext());

@@ -9,3 +9,17 @@
     <h3>Cyber Team Restaurant</h3>
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 </div>
+@if (User.Identity.IsAuthenticated)
+{
+    <table class="table table-sm">
+
+        @foreach (var claim in User.Claims)
+
+        {
+            <tr>
+                <td>@claim.Type</td>
+                <td>@claim.Value</td>
+            </tr>
+        }
+    </table>
+}
