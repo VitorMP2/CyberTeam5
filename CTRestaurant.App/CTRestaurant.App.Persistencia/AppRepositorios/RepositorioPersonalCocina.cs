@@ -42,9 +42,9 @@ namespace CTRestaurant.App.Persistencia
             return personalCocinaEncontrado;
         }
         //BorrarPersonalCocina
-        bool IRepositorioPersonalCocina.DeletePersonalCocina(int personalCocinaIdentificacion)
+        bool IRepositorioPersonalCocina.DeletePersonalCocina(int personalCocinaid)
         {
-            var personalCocinaEncontrado = _appContext.PersonalCocina.FirstOrDefault(p => p.identificacion == personalCocinaIdentificacion);
+            var personalCocinaEncontrado = _appContext.PersonalCocina.FirstOrDefault(p => p.id == personalCocinaid);
             if (personalCocinaEncontrado == null)
                 return false;
              _appContext.PersonalCocina.Remove(personalCocinaEncontrado);

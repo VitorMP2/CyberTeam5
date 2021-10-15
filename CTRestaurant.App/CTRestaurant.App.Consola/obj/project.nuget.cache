@@ -1,6 +1,10 @@
 {
   "version": 2,
+<<<<<<< HEAD
+  "dgSpecHash": "v8iuh7sEhrU3l5mDpUnvnjBSSWTyuM4Ly498V1rukPAJO3R0qaBtfVFFtYfECMhd69+IcdySHw4lszAMCos47Q==",
+=======
   "dgSpecHash": "4TzCMOkd4X9kg6bUng2nHd139uslYCkraI4lmqIXMBE1mpk41t4OtjUWTk/AtgIKpjiY6hraJTeoq3F+nPcIzQ==",
+>>>>>>> 27431f659234471566849bf65ba1db68e26f113f
   "success": true,
   "projectFilePath": "C:\\CyberTeam5\\CTRestaurant.App\\CTRestaurant.App.Consola\\CTRestaurant.App.Consola.csproj",
   "expectedPackageFiles": [

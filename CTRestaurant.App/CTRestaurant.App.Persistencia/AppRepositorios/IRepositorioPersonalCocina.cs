@@ -13,7 +13,7 @@ namespace CTRestaurant.App.Persistencia
         //UpdatePersonalCocina
         PersonalCocina UpdatePersonalCocina(PersonalCocina personalCocina);
         //DeletePersonalCocina
-        bool DeletePersonalCocina(int PersonalCocinaIdentificacion);
+        bool DeletePersonalCocina(int PersonalCocinaid);
         //GetAllPersonalCocina
         IEnumerable<PersonalCocina>  GetAllPersonalCocinas();
 

@@ -1,6 +1,14 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "hjwUgQ2PFllUpyWBIKP7CnW7Ay9F+J6ZpnAVeEpiaSF65iJH3Ioq/rMvXf8QYpWj2jL5OPd1FqI6sKf05KUzsg==",
+=======
+<<<<<<< HEAD
+  "dgSpecHash": "4RJtrJAAqgfbGJ/9BeaMs0bCcsiMY3Gi+M0V5cDTct3BSQgmrAhhDX5lgEu8g8beQorU5Wmvha2mS1d4q3I9uQ==",
+=======
+  "dgSpecHash": "1+Y8tYP4GimW05h6SSK+I9CHIlKCgaLm/NJFaNlLtxUTd3I4tYnkxaMKnPI++XAkq79jdzcez69R1IZ/i28Uxw==",
+>>>>>>> 27431f659234471566849bf65ba1db68e26f113f
+>>>>>>> d0c989b4b77684f6325444b7fa44cb39b4c7099f
   "success": true,
   "projectFilePath": "C:\\CyberTeam5\\CTRestaurant.App\\CTRestaurant.App.Dominio\\CTRestaurant.App.Dominio.csproj",
   "expectedPackageFiles": [

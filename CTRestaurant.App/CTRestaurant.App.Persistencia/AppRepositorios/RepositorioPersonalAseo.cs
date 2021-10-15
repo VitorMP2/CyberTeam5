@@ -42,9 +42,9 @@ namespace CTRestaurant.App.Persistencia
             return personalAseoEncontrado;
         }
         //BorrarPersonalAseo
-        bool IRepositorioPersonalAseo.DeletePersonalAseo(int personalAseoIdentificacion)
+        bool IRepositorioPersonalAseo.DeletePersonalAseo(int personalAseoid)
         {
-            var personalAseoEncontrado = _appContext.PersonalAseo.FirstOrDefault(p => p.identificacion == personalAseoIdentificacion);
+            var personalAseoEncontrado = _appContext.PersonalAseo.FirstOrDefault(p => p.id == personalAseoid);
             if (personalAseoEncontrado == null)
                 return false;
              _appContext.PersonalAseo.Remove(personalAseoEncontrado);

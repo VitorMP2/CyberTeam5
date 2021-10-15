@@ -5864,7 +5864,11 @@
             "privateAssets": "all"
           }
         },
+<<<<<<< HEAD
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.414\\RuntimeIdentifierGraph.json"
+=======
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.412\\RuntimeIdentifierGraph.json"
+>>>>>>> 27431f659234471566849bf65ba1db68e26f113f
       }
     }
   }

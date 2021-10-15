@@ -1,6 +1,14 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "JYC5kwgiN0w87vt1ccxo5w9spKm1nAwcCQG7c3vD7qCxnnpmhnCwX9Z4peMs3dg1i0QRROmq2Wc1qlrjdddKoQ==",
+=======
+<<<<<<< HEAD
+  "dgSpecHash": "LSR0Did1z0FPahIY2Nttxoc/gomGm744gv+KVHxU5t6T6yD8lSFHwmSunmUboElS8pFHdVmd+q9+dFix0ucIGg==",
+=======
+  "dgSpecHash": "4RwWYAR/lpXbFSj/fucINeRwZhoCyi/PdZwXCRkXT+bOuAc2Q8fXsNlcadQLVZPPqYmqpnma6X5Fuh/6T4Ponw==",
+>>>>>>> 27431f659234471566849bf65ba1db68e26f113f
+>>>>>>> d0c989b4b77684f6325444b7fa44cb39b4c7099f
   "success": true,
   "projectFilePath": "C:\\CyberTeam5\\CTRestaurant.App\\CTRestaurant.App.Persistencia\\CTRestaurant.App.Persistencia.csproj",
   "expectedPackageFiles": [

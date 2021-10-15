@@ -21,7 +21,7 @@ namespace CTRestaurant.App.Consola
             Console.WriteLine("Hello World!");
             //CrearProfesor();
             //ConsultarProfesor(3445525);
-            //EliminarProfesor(100000);
+            EliminarProfesor(1006);
             //ConsultarProfesores();
             //-------------------------------------------------------
             //CrearAdministrativo();
@@ -126,9 +126,9 @@ namespace CTRestaurant.App.Consola
             }
         }
         // EliminarProfesor
-        private static void EliminarProfesor(int identificacion)
+        private static void EliminarProfesor(int id)
         {
-            if (_repoProfesor.DeleteProfesor(identificacion))
+            if (_repoProfesor.DeleteProfesor(id))
                 Console.WriteLine("Profesor Eliminado");
             else
             {
@@ -208,9 +208,9 @@ namespace CTRestaurant.App.Consola
             }
         }
         // EliminarAdministrativo
-        private static void EliminarAdministrativo(int identificacion)
+        private static void EliminarAdministrativo(int id)
         {
-            if (_repoAdministrativo.DeleteAdministrativo(identificacion))
+            if (_repoAdministrativo.DeleteAdministrativo(id))
                 Console.WriteLine("Administrativo Eliminado");
             else
             {
@@ -289,9 +289,9 @@ namespace CTRestaurant.App.Consola
             }
         }
         // EliminarEstudiante
-        private static void EliminarEstudiante(int identificacion)
+        private static void EliminarEstudiante(int id)
         {
-            if (_repoEstudiante.DeleteEstudiante(identificacion))
+            if (_repoEstudiante.DeleteEstudiante(id))
                 Console.WriteLine("Estudiante Eliminado");
             else
             {
@@ -370,9 +370,9 @@ namespace CTRestaurant.App.Consola
             }
         }
         // EliminarPersonalAseo
-        private static void EliminarPersonalAseo(int identificacion)
+        private static void EliminarPersonalAseo(int id)
         {
-            if (_repoPersonalAseo.DeletePersonalAseo(identificacion))
+            if (_repoPersonalAseo.DeletePersonalAseo(id))
                 Console.WriteLine("Personal de aseo Eliminado");
             else
             {
@@ -451,9 +451,9 @@ namespace CTRestaurant.App.Consola
             }
         }
         // EliminarPersonalCocina
-        private static void EliminarPersonalCocina(int identificacion)
+        private static void EliminarPersonalCocina(int id)
         {
-            if (_repoPersonalCocina.DeletePersonalCocina(identificacion))
+            if (_repoPersonalCocina.DeletePersonalCocina(id))
                 Console.WriteLine("Personal de Cocina Eliminado");
             else
             {
