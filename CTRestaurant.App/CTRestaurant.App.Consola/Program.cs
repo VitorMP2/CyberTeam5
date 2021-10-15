@@ -10,6 +10,8 @@ namespace CTRestaurant.App.Consola
         private static IRepositorioProfesor _repoProfesor = new RepositorioProfesor(new Persistencia.AppContext());
         private static IRepositorioEstudiante _repoEstudiante = new RepositorioEstudiante(new Persistencia.AppContext());
         private static IRepositorioAdministrativo _repoAdministrativo = new RepositorioAdministrativo(new Persistencia.AppContext());
+        private static IRepositorioPersonalAseo _repoPersonalAseo = new RepositorioPersonalAseo(new Persistencia.AppContext());
+        private static IRepositorioPersonalCocina _repoPersonalCocina = new RepositorioPersonalCocina(new Persistencia.AppContext());
         private static IRepositorioContagiado _repoContagiado = new RepositorioContagiado(new Persistencia.AppContext());
         private static IRepositorioRestaurante _repoRestaurante = new RepositorioRestaurante(new Persistencia.AppContext());
         private static IRepositorioTurno _repoTurno = new RepositorioTurno(new Persistencia.AppContext());
@@ -18,7 +20,7 @@ namespace CTRestaurant.App.Consola
         {
             Console.WriteLine("Hello World!");
             //CrearProfesor();
-            //ConsultarProfesor(1000000);
+            //ConsultarProfesor(3445525);
             //EliminarProfesor(100000);
             //ConsultarProfesores();
             //-------------------------------------------------------
@@ -31,6 +33,16 @@ namespace CTRestaurant.App.Consola
             //ConsultarEstudiante();
             //EliminarEstudiante();
             //ConsultarEstudiantes();
+            //-------------------------------------------------------
+            //CrearPersonalAseo();
+            //ConsultarPersonalAseo(342646);
+           // EliminarPersonalAseo(342646);
+            //ConsultarPersonalAseo();
+            //-------------------------------------------------------
+            //CrearPersonalCocina();
+            //ConsultarPersonalCocina(342641);
+            //EliminarPersonalCocina();
+            //ConsultarPersonalCocina();
             //-------------------------------------------------------
             //CrearContagiado();
             //ConsultarContagiado();
@@ -295,6 +307,168 @@ namespace CTRestaurant.App.Consola
                 Console.WriteLine(estudiante.nombre + " " + estudiante.apellido + " " + estudiante.Programa);
             }
         }
+        //CRUD PersonalAseo---------------------------------------------------------------------------------
+        //CrearPersonalAseo
+        private static void CrearPersonalAseo()
+        {
+            var PersonalAseo = new PersonalAseo
+            {
+                nombre = "Carlos",
+                apellido = "Mesa",
+                identificacion = 342646,
+                edad = 23,
+                estadoCovid = EstadoCOVID.Positivo,
+                Turno_servcio_aseo = 3,
+            };
+
+            PersonalAseo PersonalAseoGuardado = _repoPersonalAseo.AddPersonalAseo(PersonalAseo);
+            if (PersonalAseoGuardado != null)
+                Console.WriteLine("Se registro un Personal de aseo con éxito");
+            else
+
+            {
+                Console.WriteLine("Hubo un error de conexion con la base de datos");
+            }
+        }
+        //ConsultarPersonalAseo
+        private static PersonalAseo ConsultarPersonalAseo(int identificacion)
+        {
+            PersonalAseo PersonalAseoEncontrado = _repoPersonalAseo.GetPersonalAseo(identificacion);
+            if (PersonalAseoEncontrado != null)
+            {
+                Console.WriteLine("Personal de aseo :  " + PersonalAseoEncontrado.nombre + " " + PersonalAseoEncontrado.apellido);
+
+            }
+            else
+            {
+                Console.WriteLine("Personal de aseo no encontrado");
+
+            }
+            return PersonalAseoEncontrado;
+        }
+        //EditarPersonalAseo
+        private static void PersonalAseo()
+        {
+            var PersonalAseo = new PersonalAseo
+            {
+                nombre = "Diego",
+                apellido = "Mesa",
+                identificacion = 1000002,
+                edad = 31,
+                estadoCovid = EstadoCOVID.Positivo,
+                Turno_servcio_aseo = 2,
+            };
+            var PersonalAseoActualizado = _repoPersonalAseo.UpdatePersonalAseo(PersonalAseo);
+            if (PersonalAseoActualizado != null)
+            {
+                Console.WriteLine("Se actualizo el Personal de aseo correctamente con identificacion" + PersonalAseoActualizado.identificacion);
+
+            }
+            else
+            {
+                Console.WriteLine("No se encontro el personal de aseo");
+            }
+        }
+        // EliminarPersonalAseo
+        private static void EliminarPersonalAseo(int identificacion)
+        {
+            if (_repoPersonalAseo.DeletePersonalAseo(identificacion))
+                Console.WriteLine("Personal de aseo Eliminado");
+            else
+            {
+                Console.WriteLine("No se pudo eliminar el Personal de aseo con esta identificacion, verifique que es la identificacion correcta");
+            }
+        }
+        //ConsultarPersonalAseos
+        private static void ConsultarPersonalAseos()
+        {
+            IEnumerable<PersonalAseo> PersonalAseos = _repoPersonalAseo.GetAllPersonalAseos();
+            foreach (var personalAseo in PersonalAseos)
+            {
+                Console.WriteLine(personalAseo.nombre + " " + personalAseo.apellido + " " + personalAseo.Turno_servcio_aseo);
+            }
+        }
+         //CRUD PersonalCocina---------------------------------------------------------------------------------
+        //CrearPersonalCocina
+        private static void CrearPersonalCocina()
+        {
+            var PersonalCocina = new PersonalCocina
+            {
+                nombre = "Andres",
+                apellido = "Restrepo",
+                identificacion = 342641,
+                edad = 24,
+                estadoCovid = EstadoCOVID.Positivo,
+                Turno_servcio_cocina = 4,
+            };
+
+            PersonalCocina PersonalCocinaGuardado = _repoPersonalCocina.AddPersonalCocina(PersonalCocina);
+            if (PersonalCocinaGuardado != null)
+                Console.WriteLine("Se registro un Personal de cocina con éxito");
+            else
+
+            {
+                Console.WriteLine("Hubo un error de conexion con la base de datos");
+            }
+        }
+        //ConsultarPersonalCocina
+        private static PersonalCocina ConsultarPersonalCocina(int identificacion)
+        {
+            PersonalCocina PersonalCocinaEncontrado = _repoPersonalCocina.GetPersonalCocina(identificacion);
+            if (PersonalCocinaEncontrado != null)
+            {
+                Console.WriteLine("Personal de cocina :  " + PersonalCocinaEncontrado.nombre + " " + PersonalCocinaEncontrado.apellido);
+
+            }
+            else
+            {
+                Console.WriteLine("Personal de cocina no encontrado");
+
+            }
+            return PersonalCocinaEncontrado;
+        }
+        //EditarPersonalCocina
+        private static void PersonalCocina()
+        {
+            var PersonalCocina = new PersonalCocina
+            {
+                nombre = "Estiven",
+                apellido = "Quintero",
+                identificacion = 1000004,
+                edad = 25,
+                estadoCovid = EstadoCOVID.Positivo,
+                Turno_servcio_cocina = 2,
+            };
+            var PersonalCocinaActualizado = _repoPersonalCocina.UpdatePersonalCocina(PersonalCocina);
+            if (PersonalCocinaActualizado != null)
+            {
+                Console.WriteLine("Se actualizo el Personal de cocina correctamente con identificacion" + PersonalCocinaActualizado.identificacion);
+
+            }
+            else
+            {
+                Console.WriteLine("No se encontro el personal de cocina");
+            }
+        }
+        // EliminarPersonalCocina
+        private static void EliminarPersonalCocina(int identificacion)
+        {
+            if (_repoPersonalCocina.DeletePersonalCocina(identificacion))
+                Console.WriteLine("Personal de Cocina Eliminado");
+            else
+            {
+                Console.WriteLine("No se pudo eliminar el Personal de Cocina con esta identificacion, verifique que es la identificacion correcta");
+            }
+        }
+        //ConsultarPersonalCocinas
+        private static void ConsultarPersonalCocinas()
+        {
+            IEnumerable<PersonalCocina> PersonalCocinas = _repoPersonalCocina.GetAllPersonalCocinas();
+            foreach (var personalCocina in PersonalCocinas)
+            {
+                Console.WriteLine(personalCocina.nombre + " " + personalCocina.apellido + " " + personalCocina.Turno_servcio_cocina);
+            }
+        }
         //CRUD Contagiado-----------------------------------------------------------------------------------
         //CrearContagiado
         private static void CrearContagiado(Persona Cliente)
@@ -530,8 +704,11 @@ namespace CTRestaurant.App.Consola
                 Console.WriteLine(registro.FechaRegistro.ToShortDateString() + "\t" + registro.Turnos);
             }
         }
+        //CRUDS 
+
         //################################################################################################
         //Consultar Persona
+       
         private static Persona ConsultarPersona(int identificacion)
         {
 
@@ -553,13 +730,29 @@ namespace CTRestaurant.App.Consola
                     }
                     else
                     {
-                        Console.WriteLine("No se encontro a la persona");
+                        if (_repoPersonalAseo.GetPersonalAseo(identificacion) != null)
+                    {
+                        return ConsultarPersonalAseo(identificacion);
+                    }
+                    else
+                    {
+                        if (_repoPersonalCocina.GetPersonalCocina(identificacion) != null)
+                    {
+                        return ConsultarPersonalCocina(identificacion);
+                    } 
+                    
+                    else
+                    {
+                         Console.WriteLine("No se encontro a la persona");
                         return null;
+                     }
+                    }
                     }
                 }
             }
 
         }
+       
         //Asignar Cliente a un Turno
         private static void AsignarClienteTurno(int IdTurno, Persona Cliente, string Menu)
         {

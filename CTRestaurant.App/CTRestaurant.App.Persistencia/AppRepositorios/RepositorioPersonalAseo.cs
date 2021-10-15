@@ -20,9 +20,9 @@ namespace CTRestaurant.App.Persistencia
             return personalAseoAdicionado.Entity;
         }
         //BuscarPersonalAseo
-        PersonalAseo IRepositorioPersonalAseo.GetPersonalAseo(int personalAseoid)
+        PersonalAseo IRepositorioPersonalAseo.GetPersonalAseo(int personalAseoIdentificacion)
         {
-            var personalAseoEncontrado = _appContext.PersonalAseo.FirstOrDefault(p => p.id == personalAseoid);
+            var personalAseoEncontrado = _appContext.PersonalAseo.FirstOrDefault(p => p.identificacion == personalAseoIdentificacion);
             return personalAseoEncontrado;
         }
         //ActualizarPersonalAseo
@@ -42,9 +42,9 @@ namespace CTRestaurant.App.Persistencia
             return personalAseoEncontrado;
         }
         //BorrarPersonalAseo
-        bool IRepositorioPersonalAseo.DeletePersonalAseo(int personalAseoid)
+        bool IRepositorioPersonalAseo.DeletePersonalAseo(int personalAseoIdentificacion)
         {
-            var personalAseoEncontrado = _appContext.PersonalAseo.FirstOrDefault(p => p.id == personalAseoid);
+            var personalAseoEncontrado = _appContext.PersonalAseo.FirstOrDefault(p => p.identificacion == personalAseoIdentificacion);
             if (personalAseoEncontrado == null)
                 return false;
              _appContext.PersonalAseo.Remove(personalAseoEncontrado);

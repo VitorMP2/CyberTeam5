@@ -20,9 +20,9 @@ namespace CTRestaurant.App.Persistencia
             return personalCocinaAdicionado.Entity;
         }
         //BuscarPersonalCocina
-        PersonalCocina IRepositorioPersonalCocina.GetPersonalCocina(int personalCocinaid)
+        PersonalCocina IRepositorioPersonalCocina.GetPersonalCocina(int personalCocinaIdentificacion)
         {
-            var personalCocinaEncontrado = _appContext.PersonalCocina.FirstOrDefault(p => p.id == personalCocinaid);
+            var personalCocinaEncontrado = _appContext.PersonalCocina.FirstOrDefault(p => p.identificacion == personalCocinaIdentificacion);
             return personalCocinaEncontrado;
         }
         //ActualizarPersonalCocina
@@ -42,9 +42,9 @@ namespace CTRestaurant.App.Persistencia
             return personalCocinaEncontrado;
         }
         //BorrarPersonalCocina
-        bool IRepositorioPersonalCocina.DeletePersonalCocina(int personalCocinaid)
+        bool IRepositorioPersonalCocina.DeletePersonalCocina(int personalCocinaIdentificacion)
         {
-            var personalCocinaEncontrado = _appContext.PersonalCocina.FirstOrDefault(p => p.id == personalCocinaid);
+            var personalCocinaEncontrado = _appContext.PersonalCocina.FirstOrDefault(p => p.identificacion == personalCocinaIdentificacion);
             if (personalCocinaEncontrado == null)
                 return false;
              _appContext.PersonalCocina.Remove(personalCocinaEncontrado);
