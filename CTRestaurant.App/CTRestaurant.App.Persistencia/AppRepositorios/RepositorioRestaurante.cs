@@ -1,6 +1,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using CTRestaurant.App.Dominio;
+using Microsoft.EntityFrameworkCore;
+using System;
 
 namespace CTRestaurant.App.Persistencia
 {
@@ -52,6 +54,11 @@ namespace CTRestaurant.App.Persistencia
         Restaurante IRepositorioRestaurante.GetRegistro (int IdRegistro)
         {            
             return _appContext.Restaurante.FirstOrDefault(r => r.Id==IdRegistro);
+        }
+
+        Restaurante IRepositorioRestaurante.GetRegistroTurno(int IdRegistro)
+        {
+            return _appContext.Restaurante.Include(p=>p.Turnos).FirstOrDefault(r=>r.Id==IdRegistro);
         }
     }
 }

@@ -1,6 +1,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using CTRestaurant.App.Dominio;
+using Microsoft.EntityFrameworkCore;
+using System;
 
 namespace CTRestaurant.App.Persistencia
 {
@@ -14,7 +16,7 @@ namespace CTRestaurant.App.Persistencia
         }
         IEnumerable<Contagiado> IRepositorioContagiado.GetAllContagiados()
         {
-            return _appContext.Contagiado;
+            return _appContext.Contagiado.Include(p=>p.PersonaContagiada);
         }
 
         Contagiado IRepositorioContagiado.AddContagiado(Contagiado Contagiado)

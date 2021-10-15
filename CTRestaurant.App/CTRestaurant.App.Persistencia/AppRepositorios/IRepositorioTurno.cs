@@ -11,5 +11,6 @@ namespace CTRestaurant.App.Persistencia
         bool DeleteTurno (int IdTurno);
         Turno GetTurno (int IdTurno);
         Turno GetTurnoCliente(int IdTurno);
+        //IEnumerable<Turno> GetTurnosNuevos();
     }
 }
