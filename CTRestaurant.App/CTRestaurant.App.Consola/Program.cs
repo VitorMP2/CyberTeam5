@@ -44,11 +44,11 @@ namespace CTRestaurant.App.Consola
             //-------------------------------------------------------
             //CrearTurno();
             //ConsultarTurno();
-            ConsultarTurnoCliente(3);
+            //ConsultarTurnoCliente(3);
             //EliminarTurno();
             //ConsultarTurnos();
             //#########################################################
-            //AsignarClienteTurno(11, ConsultarPersona(35676545), "Frijoles");
+            //AsignarClienteTurno(10, ConsultarPersona(15435645), "Tortillas");
 
         }
 
@@ -139,12 +139,12 @@ namespace CTRestaurant.App.Consola
         {
             var administrativo = new Administrativo
             {
-                nombre = "Camila",
-                apellido = "Avila",
-                identificacion = 135645,
+                nombre = "Daniela",
+                apellido = "Molina",
+                identificacion = 15435645,
                 edad = 21,
                 estadoCovid = EstadoCOVID.Positivo,
-                Oficina = "4"
+                Oficina = "7"
             };
 
             Administrativo AdministrativoGuardado = _repoAdministrativo.AddAdministrativo(administrativo);
@@ -220,17 +220,17 @@ namespace CTRestaurant.App.Consola
         {
             var Estudiante = new Estudiante
             {
-                nombre = "Carlos",
-                apellido = "Castellanos",
-                identificacion = 342645,
+                nombre = "Andres",
+                apellido = "Hernandez",
+                identificacion = 123342645,
                 edad = 22,
-                estadoCovid = EstadoCOVID.Positivo,
+                estadoCovid = EstadoCOVID.Negativo,
                 Programa = "Biología"
             };
 
             Estudiante EstudianteGuardado = _repoEstudiante.AddEstudiante(Estudiante);
             if (EstudianteGuardado != null)
-                Console.WriteLine("Se registro un Estudiante con éxito");
+                Console.WriteLine("Se registro {Estudiante.nombre} {Estudiante.apellido} con éxito");
             else
 
             {
@@ -297,18 +297,20 @@ namespace CTRestaurant.App.Consola
         }
         //CRUD Contagiado-----------------------------------------------------------------------------------
         //CrearContagiado
-        private static void CrearContagiado()
+        private static void CrearContagiado(Persona Cliente)
         {
             var contagiado = new Contagiado
             {
-                //PersonaContagiada=BuscarContagiado(),
                 PeriodoAislamiento = "15 días",
                 FechaDiagnostico = DateTime.Now
             };
+            _repoContagiado.AddContagiado(contagiado);
+            Contagiado ContagiadoGuardado=_repoContagiado.GetUltimoContagiado();
+            ContagiadoGuardado.PersonaContagiada = Cliente;
+            _repoContagiado.UpdateContagiado(ContagiadoGuardado);
 
-            Contagiado ContagiadoGuardado = _repoContagiado.AddContagiado(contagiado);
             if (ContagiadoGuardado != null)
-                Console.WriteLine("Se registro un Contagiado con éxito");
+                Console.WriteLine("Se registró el Clinte en la sección de contagiados");
             else
 
             {
@@ -328,11 +330,11 @@ namespace CTRestaurant.App.Consola
             }
         }
         //EditarContagiado
-        private static void EditarContagiado()
+        private static void EditarContagiado(Persona Cliente)
         {
             var Contagiado = new Contagiado
             {
-                //PersonaContagiada=BuscarContagiado(),
+                
                 PeriodoAislamiento = "15 días",
                 FechaDiagnostico = DateTime.Now
             };
@@ -404,7 +406,7 @@ namespace CTRestaurant.App.Consola
             Turno TurnoEncontrado = _repoTurno.GetTurnoCliente(Id);
             if (TurnoEncontrado != null)
             {
-                
+
                 Console.WriteLine(TurnoEncontrado.Menu);
                 Console.WriteLine(TurnoEncontrado.HorarioAsistencia);
                 Console.WriteLine(TurnoEncontrado.Cliente.nombre);
@@ -563,10 +565,19 @@ namespace CTRestaurant.App.Consola
         {
             if (Cliente != null)
             {
-                Turno turnoEncontrado = _repoTurno.GetTurno(IdTurno);
-                turnoEncontrado.Cliente = Cliente;
-                turnoEncontrado.Menu = Menu;
-                _repoTurno.UpdateTurno(turnoEncontrado);
+                
+                if (Cliente.estadoCovid == EstadoCOVID.Positivo)
+                {
+                    CrearContagiado(Cliente);
+                }
+                else
+                {
+                    Turno turnoEncontrado = _repoTurno.GetTurno(IdTurno);
+                    turnoEncontrado.Cliente = Cliente;
+                    turnoEncontrado.Menu = Menu;
+                    _repoTurno.UpdateTurno(turnoEncontrado);
+                    Console.WriteLine("Se asignó correctamente el turno "+turnoEncontrado.FechaRegistro+" a "+Cliente.nombre+" "+Cliente.apellido);
+                }
             }
         }
     }

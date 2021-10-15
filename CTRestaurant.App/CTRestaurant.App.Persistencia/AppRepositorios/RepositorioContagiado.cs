@@ -53,5 +53,10 @@ namespace CTRestaurant.App.Persistencia
         {
             return _appContext.Contagiado.FirstOrDefault(r => r.Id == IdContagiado);
         }
+
+        Contagiado IRepositorioContagiado.GetUltimoContagiado()
+        {
+            return _appContext.Contagiado.FirstOrDefault(r=>r.PersonaContagiada==null);
+        }
     }
 }
