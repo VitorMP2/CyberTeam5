@@ -14,5 +14,7 @@ namespace CTRestaurant.App.Persistencia
         bool DeleteContagiado (int IdContagiado);
 
         Contagiado GetContagiado (int IdContagiado);
+
+        Contagiado GetUltimoContagiado();
     }
 }
