@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/81faeb32-420b-4b9b-9e17-d8098c2ebbce/resourceGroups/appsvc_windows_centralus/providers/Microsoft.Web/sites/CyberRestaurant",
+    "appService.deploySubpath": "CTRestaurant.App\\CTRestaurant.App.Frontend\\publish"
+}

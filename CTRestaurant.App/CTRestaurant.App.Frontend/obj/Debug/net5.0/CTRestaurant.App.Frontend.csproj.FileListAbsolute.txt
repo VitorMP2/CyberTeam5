@@ -175,3 +175,8 @@ C:\CyberTeam5\CTRestaurant.App\CTRestaurant.App.Frontend\obj\Debug\net5.0\Razor\
 C:\CyberTeam5\CTRestaurant.App\CTRestaurant.App.Frontend\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Register.cshtml.g.cs
 C:\CyberTeam5\CTRestaurant.App\CTRestaurant.App.Frontend\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\_ViewImports.cshtml.g.cs
 C:\CyberTeam5\CTRestaurant.App\CTRestaurant.App.Frontend\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ViewImports.cshtml.g.cs
+C:\CyberTeam5\CTRestaurant.App\CTRestaurant.App.Frontend\bin\Debug\net5.0\publish\web.config
+C:\CyberTeam5\CTRestaurant.App\CTRestaurant.App.Frontend\bin\Debug\net5.0\publish\appsettings.Development.json
+C:\CyberTeam5\CTRestaurant.App\CTRestaurant.App.Frontend\bin\Debug\net5.0\publish\appsettings.json
+C:\CyberTeam5\CTRestaurant.App\CTRestaurant.App.Frontend\bin\Debug\net5.0\publish\CTRestaurant.App.Frontend.deps.json
+C:\CyberTeam5\CTRestaurant.App\CTRestaurant.App.Frontend\bin\Debug\net5.0\publish\CTRestaurant.App.Frontend.runtimeconfig.json

@@ -6,10 +6,11 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using CTRestaurant.App.Persistencia;
 using CTRestaurant.App.Dominio;
-
+using Microsoft.AspNetCore.Authorization;
 
 namespace CTRestaurant.App.Fronted.Pages
 {
+    [Authorize]
     public class ProfesoresModel : PageModel
     {   
         private static IRepositorioProfesor _repoProfesor=new RepositorioProfesor(new Persistencia.AppContext());

@@ -1,10 +1,6 @@
 {
   "version": 2,
-<<<<<<< HEAD
-  "dgSpecHash": "v8iuh7sEhrU3l5mDpUnvnjBSSWTyuM4Ly498V1rukPAJO3R0qaBtfVFFtYfECMhd69+IcdySHw4lszAMCos47Q==",
-=======
-  "dgSpecHash": "4TzCMOkd4X9kg6bUng2nHd139uslYCkraI4lmqIXMBE1mpk41t4OtjUWTk/AtgIKpjiY6hraJTeoq3F+nPcIzQ==",
->>>>>>> 27431f659234471566849bf65ba1db68e26f113f
+  "dgSpecHash": "JpYucUX5IioUUw0dzxH3/Yrk+/UoO868tEqnBNTkG3n6jEkUe5mxBGUGBojp9CNbG1LPsMGSS8O43pg2iANhKw==",
   "success": true,
   "projectFilePath": "C:\\CyberTeam5\\CTRestaurant.App\\CTRestaurant.App.Consola\\CTRestaurant.App.Consola.csproj",
   "expectedPackageFiles": [
@@ -103,7 +99,8 @@
     "C:\\Users\\Familia\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\Familia\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
     "C:\\Users\\Familia\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
-    "C:\\Users\\Familia\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512"
+    "C:\\Users\\Familia\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512",
+    "C:\\Users\\Familia\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.19\\microsoft.netcore.app.host.win-x64.3.1.19.nupkg.sha512"
   ],
   "logs": []
 }

@@ -1,0 +1,13 @@
+C:\CyberTeam5\CTRestaurant.App\CTRestaurant.App.Persistencia\bin\Release\netstandard2.1\CTRestaurant.App.Persistencia.deps.json
+C:\CyberTeam5\CTRestaurant.App\CTRestaurant.App.Persistencia\bin\Release\netstandard2.1\CTRestaurant.App.Persistencia.dll
+C:\CyberTeam5\CTRestaurant.App\CTRestaurant.App.Persistencia\bin\Release\netstandard2.1\CTRestaurant.App.Persistencia.pdb
+C:\CyberTeam5\CTRestaurant.App\CTRestaurant.App.Persistencia\bin\Release\netstandard2.1\CTRestaurant.App.Dominio.dll
+C:\CyberTeam5\CTRestaurant.App\CTRestaurant.App.Persistencia\bin\Release\netstandard2.1\CTRestaurant.App.Dominio.pdb
+C:\CyberTeam5\CTRestaurant.App\CTRestaurant.App.Persistencia\obj\Release\netstandard2.1\CTRestaurant.App.Persistencia.csproj.AssemblyReference.cache
+C:\CyberTeam5\CTRestaurant.App\CTRestaurant.App.Persistencia\obj\Release\netstandard2.1\CTRestaurant.App.Persistencia.GeneratedMSBuildEditorConfig.editorconfig
+C:\CyberTeam5\CTRestaurant.App\CTRestaurant.App.Persistencia\obj\Release\netstandard2.1\CTRestaurant.App.Persistencia.AssemblyInfoInputs.cache
+C:\CyberTeam5\CTRestaurant.App\CTRestaurant.App.Persistencia\obj\Release\netstandard2.1\CTRestaurant.App.Persistencia.AssemblyInfo.cs
+C:\CyberTeam5\CTRestaurant.App\CTRestaurant.App.Persistencia\obj\Release\netstandard2.1\CTRestaurant.App.Persistencia.csproj.CoreCompileInputs.cache
+C:\CyberTeam5\CTRestaurant.App\CTRestaurant.App.Persistencia\obj\Release\netstandard2.1\CTRestaurant.App.Persistencia.csproj.CopyComplete
+C:\CyberTeam5\CTRestaurant.App\CTRestaurant.App.Persistencia\obj\Release\netstandard2.1\CTRestaurant.App.Persistencia.dll
+C:\CyberTeam5\CTRestaurant.App\CTRestaurant.App.Persistencia\obj\Release\netstandard2.1\CTRestaurant.App.Persistencia.pdb

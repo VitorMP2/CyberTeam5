@@ -11,7 +11,7 @@ namespace CTRestaurant.App.Frontend.Pages
 {
     public class PersonalCocinaModel : PageModel
     {
-           private static IRepositorioPersonalCocina _repoPersonalCocina=new RepositorioPersonalCocina(new Persistencia.AppContext());
+        private static IRepositorioPersonalCocina _repoPersonalCocina=new RepositorioPersonalCocina(new Persistencia.AppContext());
         public IEnumerable<PersonalCocina> PersonalCocinas {get;set;}
         public void OnGet()
         {

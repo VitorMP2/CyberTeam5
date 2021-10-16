@@ -1,0 +1,9 @@
+C:\CyberTeam5\CTRestaurant.App\CTRestaurant.App.Dominio\bin\Release\netstandard2.0\CTRestaurant.App.Dominio.deps.json
+C:\CyberTeam5\CTRestaurant.App\CTRestaurant.App.Dominio\bin\Release\netstandard2.0\CTRestaurant.App.Dominio.dll
+C:\CyberTeam5\CTRestaurant.App\CTRestaurant.App.Dominio\bin\Release\netstandard2.0\CTRestaurant.App.Dominio.pdb
+C:\CyberTeam5\CTRestaurant.App\CTRestaurant.App.Dominio\obj\Release\netstandard2.0\CTRestaurant.App.Dominio.GeneratedMSBuildEditorConfig.editorconfig
+C:\CyberTeam5\CTRestaurant.App\CTRestaurant.App.Dominio\obj\Release\netstandard2.0\CTRestaurant.App.Dominio.AssemblyInfoInputs.cache
+C:\CyberTeam5\CTRestaurant.App\CTRestaurant.App.Dominio\obj\Release\netstandard2.0\CTRestaurant.App.Dominio.AssemblyInfo.cs
+C:\CyberTeam5\CTRestaurant.App\CTRestaurant.App.Dominio\obj\Release\netstandard2.0\CTRestaurant.App.Dominio.csproj.CoreCompileInputs.cache
+C:\CyberTeam5\CTRestaurant.App\CTRestaurant.App.Dominio\obj\Release\netstandard2.0\CTRestaurant.App.Dominio.dll
+C:\CyberTeam5\CTRestaurant.App\CTRestaurant.App.Dominio\obj\Release\netstandard2.0\CTRestaurant.App.Dominio.pdb

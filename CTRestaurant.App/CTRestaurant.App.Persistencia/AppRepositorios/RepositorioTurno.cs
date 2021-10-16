@@ -58,5 +58,10 @@ namespace CTRestaurant.App.Persistencia
         {
             return _appContext.Turno.Include(t => t.Cliente).FirstOrDefault(t => t.Id == IdTurno);
         }
+
+        /*IEnumerable<Turno> IRepositorioTurno.GetTurnosNuevos()
+        {
+            return _appContext.Turno.Include(t=>t.Registroid).SingleOrDefault(t=>t.Registroid==null).ToList();
+        }*/
     }
 }

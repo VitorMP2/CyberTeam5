@@ -47,22 +47,22 @@ namespace CTRestaurant.App.Consola
             //CrearContagiado();
             //ConsultarContagiado();
             //EliminarContagiado();
-            ConsultarContagiados();
+            //ConsultarContagiados();
             //-------------------------------------------------------
             //CrearRegistroRestaurante();
             //ConsultarRegistroRestaurante();
             //EliminarRegistroRestaurante();
             //ConsultarRegistrosRestaurante();
-            //ConsultarRegistroTurno(4021);
+            //ConsultarRegistroTurno(4022);
             //-------------------------------------------------------
-            //DateTime fecha = new DateTime(2021, 10, 15);
+            //DateTime fecha = new DateTime(2021, 10, 20);
             //CrearTurnos(fecha, 11, 14);
             //ConsultarTurno();
             //ConsultarTurnoCliente(3);
             //EliminarTurno();
             //ConsultarTurnos();
             //#########################################################
-            //AsignarClienteTurno(64, ConsultarPersona(342641), "Huevos");
+            //AsignarClienteTurno(82, ConsultarPersona(123342645), "Huevos");
 
         }
 

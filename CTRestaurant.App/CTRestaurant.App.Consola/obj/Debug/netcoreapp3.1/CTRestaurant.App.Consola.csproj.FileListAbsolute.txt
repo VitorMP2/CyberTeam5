@@ -126,7 +126,6 @@ C:\CyberTeam5\CTRestaurant.App\CTRestaurant.App.Consola\bin\Debug\netcoreapp3.1\
 C:\CyberTeam5\CTRestaurant.App\CTRestaurant.App.Consola\bin\Debug\netcoreapp3.1\CTRestaurant.App.Persistencia.dll
 C:\CyberTeam5\CTRestaurant.App\CTRestaurant.App.Consola\bin\Debug\netcoreapp3.1\CTRestaurant.App.Persistencia.pdb
 C:\CyberTeam5\CTRestaurant.App\CTRestaurant.App.Consola\bin\Debug\netcoreapp3.1\CTRestaurant.App.Dominio.pdb
-C:\CyberTeam5\CTRestaurant.App\CTRestaurant.App.Consola\obj\Debug\netcoreapp3.1\CTRestaurant.App.Consola.csprojAssemblyReference.cache
 C:\CyberTeam5\CTRestaurant.App\CTRestaurant.App.Consola\obj\Debug\netcoreapp3.1\CTRestaurant.App.Consola.AssemblyInfoInputs.cache
 C:\CyberTeam5\CTRestaurant.App\CTRestaurant.App.Consola\obj\Debug\netcoreapp3.1\CTRestaurant.App.Consola.AssemblyInfo.cs
 C:\CyberTeam5\CTRestaurant.App\CTRestaurant.App.Consola\obj\Debug\netcoreapp3.1\CTRestaurant.App.Consola.csproj.CoreCompileInputs.cache
@@ -134,3 +133,5 @@ C:\CyberTeam5\CTRestaurant.App\CTRestaurant.App.Consola\obj\Debug\netcoreapp3.1\
 C:\CyberTeam5\CTRestaurant.App\CTRestaurant.App.Consola\obj\Debug\netcoreapp3.1\CTRestaurant.App.Consola.dll
 C:\CyberTeam5\CTRestaurant.App\CTRestaurant.App.Consola\obj\Debug\netcoreapp3.1\CTRestaurant.App.Consola.pdb
 C:\CyberTeam5\CTRestaurant.App\CTRestaurant.App.Consola\obj\Debug\netcoreapp3.1\CTRestaurant.App.Consola.genruntimeconfig.cache
+C:\CyberTeam5\CTRestaurant.App\CTRestaurant.App.Consola\obj\Debug\netcoreapp3.1\CTRestaurant.App.Consola.csproj.AssemblyReference.cache
+C:\CyberTeam5\CTRestaurant.App\CTRestaurant.App.Consola\obj\Debug\netcoreapp3.1\CTRestaurant.App.Consola.GeneratedMSBuildEditorConfig.editorconfig
